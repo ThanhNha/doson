@@ -21,6 +21,27 @@ flexbox
   font-display: swap;
   /* or block, swap, fallback, optional */
 }
+@font-face {
+  font-family: "MyriadPro";
+  font-weight: 900;
+  src: url("../fonts/font/MyriadPro-Bold.eot?") format("eot"), url("../fonts/font/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/font/MyriadPro-Bold.woff") format("woff"), url("../fonts/font/MyriadPro-Bold.ttf") format("truetype"), url('../fonts/font/MyriadPro-Bold.svg#str-replace(MyriadPro, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
+@font-face {
+  font-family: "MyriadPro";
+  font-weight: 400;
+  src: url("../fonts/font/MyriadPro-Light.eot?") format("eot"), url("../fonts/font/MyriadPro-Light.woff2") format("woff2"), url("../fonts/font/MyriadPro-Light.woff") format("woff"), url("../fonts/font/MyriadPro-Light.ttf") format("truetype"), url('../fonts/font/MyriadPro-Light.svg#str-replace(MyriadPro, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
+@font-face {
+  font-family: "MyriadPro";
+  font-weight: 600;
+  src: url("../fonts/font/MyriadPro-Semibold.eot?") format("eot"), url("../fonts/font/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/font/MyriadPro-Semibold.woff") format("woff"), url("../fonts/font/MyriadPro-Semibold.ttf") format("truetype"), url('../fonts/font/MyriadPro-Semibold.svg#str-replace(MyriadPro, " ", "_")') format("svg");
+  font-display: swap;
+  /* or block, swap, fallback, optional */
+}
 /*! 
 * @package IcoFont 
 * @version 1.0.1 
@@ -9472,7 +9493,7 @@ section#main-banner .wrapper-title-banner {
 #section-value {
   position: relative;
   background: #fed8a8;
-  padding-bottom: 100px;
+  padding-bottom: 175px;
 }
 #section-value .wrapper-title-banner .section-title h1 {
   color: #f57e20;
