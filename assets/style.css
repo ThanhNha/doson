@@ -8745,7 +8745,7 @@ flexbox
   }
 
   .h2 {
-    font-size: 40px !important;
+    font-size: 56px !important;
     line-height: 150% !important;
   }
 
@@ -9057,6 +9057,7 @@ nav button #toggle .line3 {
 }
 
 .footer {
+  overflow: hidden;
   padding-top: 100px;
   position: relative;
   background: linear-gradient(to left, #f57121, #fdbf66);
@@ -9120,11 +9121,21 @@ nav button #toggle .line3 {
 .widget h4 {
   color: #f57e20;
 }
+.widget .footer-menu li {
+  margin-bottom: 20px;
+}
+.widget .footer-menu i {
+  padding: 5px;
+  border-radius: 100%;
+  background: #fdc066;
+}
 .widget .footer-menu a {
   color: #b35f27;
 }
-.widget .footer-menu a li {
-  display: flex;
+.widget .footer-menu a .icon-footer {
+  display: block;
+  padding: 5px;
+  border-radius: 100%;
 }
 .widget .footer-menu a:hover {
   color: #eb3424;

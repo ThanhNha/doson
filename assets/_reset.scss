@@ -14,8 +14,8 @@ ul {
 }
 a,
 a:hover {
-  text-decoration: none;
-  text-transform: none;
+  text-decoration: auto !important;
+  // text-transform: none;
   // color: #b5dbab;
 }
 
