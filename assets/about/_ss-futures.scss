@@ -1,13 +1,24 @@
 #section-futures {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  @include tablet {
+    padding-bottom: 70px;
+  }
+  @include desktop {
+    padding-bottom: 100px;
+  }
   background: $color-red-200;
   position: relative;
   .img-animation {
     position: absolute;
     top: auto;
-    left: 35%;
+    left: 25%;
     width: 200px;
     height: 200px;
+    display: none;
+    @include tablet {
+      display: block;
+      left: 25%;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -15,7 +26,13 @@
     }
   }
   .wrapper-value {
-    margin-top: 100px;
+    margin-top: 50px;
+    @include tablet {
+      margin-top: 70px;
+    }
+    @include desktop {
+      margin-top: 100px;
+    }
     .value-block {
       background: $white;
       border-radius: 100%;
@@ -60,9 +77,13 @@
     }
   }
   .wrapper-card-futures {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    margin-bottom: 20px;
+    @include desktop {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 .footer .custom-shape-divider-top-1652196438 .shape-fill {
