@@ -1,8 +1,14 @@
 .footer {
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 50px;
   position: relative;
   background: $color-gradient-2;
+  @include tablet {
+    padding-top: 70px;
+  }
+  @include desktop {
+    padding-top: 100px;
+  }
   i {
     font-size: 20px;
   }
@@ -20,13 +26,17 @@
     width: 100%;
   }
   .custom-shape-divider-top-1652196438 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+    display: none;
+    @include desktop {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
   }
 
   .custom-shape-divider-top-1652196438 svg {

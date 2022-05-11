@@ -5,12 +5,16 @@ section#main-banner {
   height: 100vh;
 
   .custom-shape-divider-bottom-1652161885 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+    display: none;
+    @include desktop {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
   }
 
   .custom-shape-divider-bottom-1652161885 svg {

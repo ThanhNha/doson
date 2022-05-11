@@ -72,6 +72,7 @@ $(".wrapper-blogs").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: false,
+        arrows: false,
       },
     },
     {
@@ -79,6 +80,7 @@ $(".wrapper-blogs").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
     {
@@ -86,6 +88,7 @@ $(".wrapper-blogs").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
     {
@@ -93,6 +96,7 @@ $(".wrapper-blogs").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
       },
     },
   ],
