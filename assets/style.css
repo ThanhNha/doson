@@ -8800,6 +8800,8 @@ flexbox
 
 .slick-dots {
   bottom: -40px !important;
+  left: 0 !important;
+  right: 0 !important;
 }
 
 .slick-dots li button:before {
@@ -9121,6 +9123,9 @@ nav button #toggle .line3 {
 .widget .footer-menu a {
   color: #b35f27;
 }
+.widget .footer-menu a li {
+  display: flex;
+}
 .widget .footer-menu a:hover {
   color: #eb3424;
 }
@@ -9131,7 +9136,8 @@ nav button #toggle .line3 {
 }
 
 .footer-btm {
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 1px solid #fff;
+  text-align: center;
 }
 
 .footer-socials li a {
@@ -9164,8 +9170,12 @@ nav button #toggle .line3 {
 }
 .subscribe .btn {
   position: absolute;
-  right: 6px;
-  top: 6px;
+  right: 15px;
+  top: 10px;
+}
+.subscribe .main-btn {
+  background: #f57e20;
+  color: #fff;
 }
 
 .backtop {

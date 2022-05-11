@@ -73,6 +73,9 @@
 
   .footer-menu a {
     color: $color-brown-200;
+    li {
+      display: flex;
+    }
 
     &:hover {
       color: $color-red-500;
@@ -88,7 +91,8 @@
 }
 
 .footer-btm {
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 1px solid $white;
+  text-align: center;
 }
 
 .footer-socials {
@@ -125,8 +129,12 @@
   }
   .btn {
     position: absolute;
-    right: 6px;
-    top: 6px;
+    right: 15px;
+    top: 10px;
+  }
+  .main-btn {
+    background: $color-red-400;
+    color: $white;
   }
 }
 
