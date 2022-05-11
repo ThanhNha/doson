@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
-  font-size: 18px;
-  font-family: $font-primary !important;
+  font-size: 18px !important;
+  // font-family: $font-primary !important;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: auto !important;

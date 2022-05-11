@@ -1,8 +1,9 @@
 @import "variables";
 @import "mixins";
-// @import "reset";
+@import "reset";
 @import "fonts";
 @import "icomoon";
+@import "keyframe";
 
 @import "custom";
 @import "button";
@@ -11,9 +12,15 @@
 
 @import "header";
 @import "footer";
-@import "main-banner";
-@import "ss-welcome";
-@import "ss-service";
-@import "ss-value";
-@import "ss-testimonial";
-@import "ss-blogs";
+// home
+@import "./home/main-banner";
+@import "./home/ss-welcome";
+@import "./home/ss-service";
+@import "./home/ss-value";
+@import "./home/ss-testimonial";
+@import "./home/ss-blogs";
+
+//about
+@import "./about/ss-banner";
+@import "./about/ss-vision";
+@import "./about/ss-futures";
