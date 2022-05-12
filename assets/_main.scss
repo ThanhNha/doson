@@ -1,3 +1,16 @@
+main {
+  padding-top: 80px;
+  @include tablet {
+    padding-top: 70px;
+  }
+  @include desktop {
+    padding-top: 80px;
+  }
+  @include large-desktop {
+    padding-top: 80px;
+  }
+}
+
 .section-title {
   margin-top: 15px;
   margin-bottom: 35px;

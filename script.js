@@ -1,14 +1,3 @@
-let button__menu = document.getElementById("toggle_nav");
-
-button__menu.addEventListener("click", function (e) {
-  let menu__mobile = document.getElementById("menu__mobile");
-  if (menu__mobile.classList.contains("open")) {
-    menu__mobile.classList.remove("open");
-  } else {
-    menu__mobile.classList.add("open");
-  }
-});
-
 $(".testimonial-wrap-2").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -101,3 +90,25 @@ $(".wrapper-blogs").slick({
     },
   ],
 });
+
+function header() {
+  var header = gsap.to("#header", { y: "-=200", duration: 0.2, ease: "power2.in", paused: true });
+  //fixed header
+  ScrollTrigger.create({
+    trigger: "#header",
+    start: "10px top",
+    end: 99999,
+    toggleClass: { className: "scrolled", targets: "#header" },
+    onUpdate: ({ progress, direction, isActive }) => {
+      if (direction == -1) {
+        header.reverse();
+      }
+      if (direction == 1) {
+        header.play();
+      } else if (direction == 1 && isActive == true) {
+        header.play();
+      }
+    },
+  });
+}
+header();
