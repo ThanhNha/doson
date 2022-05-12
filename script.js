@@ -92,7 +92,7 @@ $(".wrapper-blogs").slick({
 });
 
 function header() {
-  var header = gsap.to("#header", { y: "-=200", duration: 0.2, ease: "power2.in", paused: true });
+  var header = gsap.to("#header", { y: "-=300", duration: 0.2, ease: "power2.in", paused: true });
   //fixed header
   ScrollTrigger.create({
     trigger: "#header",
@@ -109,6 +109,12 @@ function header() {
         header.play();
       }
     },
+  });
+
+  const hamburger = document.querySelector(".hamburger");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
   });
 }
 header();

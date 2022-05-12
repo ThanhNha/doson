@@ -9003,6 +9003,46 @@ main {
 #header #navbar {
   background: transparent !important;
 }
+#header #navbar .hamburger {
+  width: 36px;
+}
+#header #navbar .hamburger .bar {
+  height: 3px;
+  display: block;
+  color: #fff;
+  padding: 0;
+  margin: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+}
+#header #navbar .hamburger .bar:nth-child(1) {
+  width: 33.3%;
+}
+#header #navbar .hamburger .bar:nth-child(2) {
+  width: 50%;
+}
+#header #navbar .hamburger .bar:nth-child(3) {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  #header #navbar .hamburger {
+    display: block;
+  }
+  #header #navbar .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #header #navbar .active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(-315deg);
+    transform: translateY(8px) rotate(-315deg);
+    width: 100%;
+  }
+  #header #navbar .active .bar:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+    width: 100%;
+  }
+}
 #header .btn__cta {
   display: flex;
   align-items: center;
@@ -9010,7 +9050,6 @@ main {
   text-align: center;
   color: #eb3424;
   text-transform: uppercase;
-  margin-left: 25px;
   display: block;
 }
 @media (min-width: 992px) {
@@ -9022,6 +9061,7 @@ main {
 #header .navbar-brand {
   width: 135px;
   height: 70px;
+  padding: 0 !important;
 }
 #header .navbar-brand img {
   width: 100%;
@@ -9115,15 +9155,25 @@ main {
   border-radius: 15px;
 }
 #header #navbar .nav-item.active .nav-link {
-  background: #eb3424;
-  border-radius: 15px;
+  color: #eb3424;
+}
+@media (min-width: 992px) {
+  #header #navbar .nav-item.active .nav-link {
+    background: #eb3424;
+    border-radius: 15px;
+    color: #fff;
+  }
 }
 #header #navbar .nav-link {
-  margin-left: 25px;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
   transition: all 0.25s ease;
+}
+@media (min-width: 992px) {
+  #header #navbar .nav-link {
+    margin-left: 25px;
+  }
 }
 #header #navbar.nav-text-white .nav-link {
   color: #fff;
