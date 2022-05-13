@@ -9,21 +9,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .wrapper-title-service {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    .section-title {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-  }
-
   .wrapper-main-service {
     position: relative;
-    max-width: 90%;
     margin: 0 auto;
+    max-width: 95%;
     .service {
       .service-tag {
         display: inline-block;
@@ -85,6 +74,13 @@
     }
   }
   .minus-top {
-    margin-top: -200px;
+    margin-top: 20px;
+
+    @include desktop {
+      margin-top: -140px;
+    }
+    @include large-desktop {
+      margin-top: -200px;
+    }
   }
 }

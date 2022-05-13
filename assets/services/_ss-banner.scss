@@ -49,8 +49,11 @@
     bottom: 0;
     right: 0;
     width: 60%;
-    // height: 70%;
     z-index: 1;
+    display: none;
+    @include desktop {
+      display: block;
+    }
     img {
       width: 100%;
       height: 100%;

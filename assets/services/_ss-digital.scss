@@ -1,17 +1,8 @@
 #section-digital {
   position: relative;
   background: $color-red-200;
-  padding: 150px;
-  .wrapper-title-service {
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    .section-title {
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-  }
+  padding-top: 150px;
+  padding-bottom: 150px;
   .custom-shape-divider-top-1652350317 {
     position: absolute;
     top: 0;
@@ -25,7 +16,10 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
+    height: 100px;
+    @include desktop {
+      height: 150px;
+    }
     transform: rotateY(180deg);
   }
 
@@ -50,11 +44,16 @@
     display: flex;
     background: $white;
     flex-direction: column;
-    height: 100%;
+    // height: 100%;
     @include transition;
     max-width: 100%;
-    @include desktop {
+    margin: 15px 0;
+    @include large-desktop {
+      margin-top: 30px;
+      margin-bottom: 30px;
       max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
     &:hover {
       background: $color-red-300;
@@ -92,11 +91,36 @@
       h2 {
         font-weight: bold;
         text-align: center;
+        @include limit-row(3);
+        min-height: 60px;
       }
     }
     .service-description {
       text-align: center;
       @include limit-row(3);
     }
+  }
+  .custom-shape-divider-bottom-1652411159 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1652411159 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    @include desktop {
+      height: 150px;
+    }
+  }
+
+  .custom-shape-divider-bottom-1652411159 .shape-fill {
+    fill: #ffffff;
   }
 }

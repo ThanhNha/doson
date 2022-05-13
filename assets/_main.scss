@@ -38,9 +38,13 @@ main {
       margin-left: 20px;
       display: inline-block;
       color: $white;
-      padding: 0 15px;
+      padding: 10px 15px;
       border-radius: 20px;
       background: $color-red-300;
+      margin-top: 20px;
+      @include tablet {
+        margin-top: 0;
+      }
     }
     .title {
       display: flex;
@@ -55,6 +59,25 @@ main {
       h1 {
         color: $color-red-400;
       }
+    }
+  }
+}
+.wrapper-title-service {
+  max-width: 90%;
+  @include tablet {
+    max-width: 80%;
+  }
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  .section-title {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
     }
   }
 }
