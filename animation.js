@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const scrollProperties = (section) => {
+const scrollAnimation = (section) => {
   return {
     scrollTrigger: {
       trigger: section,
@@ -18,7 +18,7 @@ sections.forEach(function (section) {
   let text1 = sectionText.querySelector(".p1");
   let text2 = sectionText.querySelector(".sub-title");
 
-  let textTimeline = new gsap.timeline(scrollProperties(section));
+  let textTimeline = new gsap.timeline(scrollAnimation(section));
   textTimeline.from([title, text2], {
     opacity: 0,
     xPercent: 10,
@@ -37,7 +37,7 @@ sections.forEach(function (section) {
   );
 
   //   let sectionImage = section.querySelector(".section__image");
-  //   let imageTimeline = new gsap.timeline(scrollProperties(section));
+  //   let imageTimeline = new gsap.timeline(scrollAnimation(section));
   //   imageTimeline.from(sectionImage, {
   //     opacity: 0,
   //     xPercent: 10,

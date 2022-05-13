@@ -10,6 +10,11 @@ main {
     padding-top: 80px;
   }
 }
+.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .section-title {
   margin-top: 15px;
@@ -25,6 +30,33 @@ main {
   //   h2 {
   //     color: $title-color;
   //   }
+}
+.wrapper-title-service {
+  .section-title {
+    display: flex;
+    span {
+      margin-left: 20px;
+      display: inline-block;
+      color: $white;
+      padding: 0 15px;
+      border-radius: 20px;
+      background: $color-red-300;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      max-width: 400px;
+      .divider {
+        background: $color-red-400;
+        height: 4px;
+      }
+      h1 {
+        color: $color-red-400;
+      }
+    }
+  }
 }
 .slick-dots {
   bottom: -40px !important;

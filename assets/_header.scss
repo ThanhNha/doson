@@ -3,6 +3,9 @@
   transition: all 0.3s linear;
   z-index: 9999;
   background: $color-gradient-2;
+  .collapse.show {
+    height: 100vh !important;
+  }
   #navbar {
     background: transparent !important;
     //Hamburger menu

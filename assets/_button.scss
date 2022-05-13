@@ -9,8 +9,8 @@
   }
 
   border-radius: 0.5rem;
-  color: $color-red-500;
-  background: $white;
+  color: $white;
+  background: $color-red-400;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -19,6 +19,26 @@
   overflow: hidden;
   z-index: 0;
   &:hover {
+    color: $white;
+  }
+}
+.main-btn.btn__cta {
+  color: $color-red-500;
+  background: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.main-btn.border {
+  background: transparent;
+  color: $color-red-500;
+  border: 1px solid $color-red-500 !important;
+  &:focus {
+    box-shadow: none;
+  }
+  @include transition;
+  &:hover {
+    background: $color-red-400;
     color: $white;
   }
 }
@@ -36,4 +56,17 @@
 .main-btn:hover::before {
   height: 100%;
   top: 0;
+}
+.btn__form {
+  background: $color-red-400;
+  border-radius: 15px;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 12px 20px;
+  font-weight: bold;
+  @include transition;
+  &:hover {
+    background: $color-red-500;
+  }
 }

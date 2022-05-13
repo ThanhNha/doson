@@ -13,7 +13,10 @@
 .uppercase {
   text-transform: uppercase !important;
 }
-
+.body-text {
+  color: $color-gray-600;
+  font-size: 18px;
+}
 .h1 {
   font-size: 72px !important;
   line-height: 120% !important;
