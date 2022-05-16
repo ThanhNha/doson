@@ -8933,6 +8933,10 @@ html {
     line-height: 100% !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   padding-top: 80px;
 }
