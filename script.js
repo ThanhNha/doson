@@ -8,7 +8,7 @@ $(".testimonial-wrap-2").slick({
   slidesToScroll: 1,
   infinite: true,
   centerMode: true,
-  centerPadding: "160px",
+  centerPadding: "250px",
   dots: true,
   arrows: false,
   autoplay: true,
@@ -21,7 +21,7 @@ $(".testimonial-wrap-2").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        centerPadding: "100px",
+        centerPadding: "200px",
       },
     },
     {
@@ -29,7 +29,7 @@ $(".testimonial-wrap-2").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerPadding: "80px",
+        centerPadding: "100px",
       },
     },
     {
@@ -37,7 +37,7 @@ $(".testimonial-wrap-2").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerPadding: "40px",
+        centerPadding: "60px",
       },
     },
     {

@@ -1,13 +1,12 @@
 #section-service {
   position: relative;
-  margin-top: -1px;
   min-height: 400px;
   background: #fed8a8;
   .wrapper-service {
     padding: 40px 0;
-    @include large-desktop {
+    @include desktop {
       position: absolute;
-      top: -100px;
+      top: -200px;
       z-index: 2;
       left: 50%;
       transform: translateX(-50%);
@@ -46,7 +45,7 @@
       top: -200px;
     }
     @include desktop {
-      top: -250px;
+      top: -300px;
     }
     right: 0;
     .section-title {

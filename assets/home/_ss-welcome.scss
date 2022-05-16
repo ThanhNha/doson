@@ -1,9 +1,11 @@
 #section-welcome {
   overflow: hidden;
   padding-top: 40px;
-  padding-bottom: 300px;
   background: $white;
-
+  padding-bottom: 150px;
+  @include desktop {
+    padding-bottom: 350px;
+  }
   .wrapper-image {
     height: 360px;
     @include tablet {
@@ -62,8 +64,10 @@
   }
   .wrapper-title-banner {
     padding-left: 0px;
+
     @include tablet {
       padding-left: 35px;
+      padding: 0;
     }
     @include desktop {
       padding-left: 50px;
@@ -81,23 +85,24 @@
       }
       .sub-title {
         color: $color-brown-200;
+        font-size: 24px;
+        padding-bottom: 120px;
+        @include tablet {
+          padding-bottom: 100px;
+        }
+        @include desktop {
+          font-size: 36px;
+          padding-bottom: 0px;
+          padding-top: 50px;
+        }
         font-style: italic;
         font-weight: bold;
         line-height: 120% !important;
         padding-top: 0px;
-        @media (max-width: 575px) {
-          font-size: 30px !important;
-        }
-        @include large-desktop {
-          // font-size: 40px !important;
-          padding-top: 100px;
-        }
       }
     }
   }
   .section-welcome-2 {
-    padding-top: 20px;
-
     .wrapper-image {
       margin-top: 0;
       display: none;
@@ -172,7 +177,7 @@
       height: 70px;
     }
     @include desktop {
-      height: 109px;
+      height: 150px;
     }
     transform: rotateY(180deg);
   }
@@ -183,11 +188,17 @@
   .background-img {
     z-index: 0;
     position: absolute;
-    bottom: -100px;
-    max-width: 40%;
-    display: none;
+    bottom: 0px;
+    left: 0;
+    height: auto;
+    @include mobile {
+      height: 400px;
+    }
+    @include tablet {
+      height: 500px;
+    }
     @include desktop {
-      display: block;
+      height: auto;
     }
     img {
       width: 100%;
