@@ -1,6 +1,6 @@
 $(".value-block span").counterUp({
   delay: 15,
-  time: 2000,
+  time: 3000,
 });
 
 $(".testimonial-wrap-2").slick({
