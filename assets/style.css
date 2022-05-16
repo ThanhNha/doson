@@ -11319,6 +11319,19 @@ section#main-banner .wrapper-title-banner {
   flex-direction: column;
 }
 
+#page-news {
+  padding: 25px 0;
+}
+@media (min-width: 768px) {
+  #page-news {
+    padding: 35px 0;
+  }
+}
+@media (min-width: 992px) {
+  #page-news {
+    padding: 50px 0;
+  }
+}
 #page-news .section-news-1 {
   padding-top: 25px;
   margin-bottom: 20px;

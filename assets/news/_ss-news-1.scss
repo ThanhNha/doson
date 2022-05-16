@@ -1,5 +1,12 @@
 //should wrapper page news inside tag main with id= page-news
 #page-news {
+  padding: 25px 0;
+  @include tablet {
+    padding: 35px 0;
+  }
+  @include desktop {
+    padding: 50px 0;
+  }
   .wrapper-tite {
   }
   .section-news-1 {
