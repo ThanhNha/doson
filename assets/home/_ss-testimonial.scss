@@ -11,12 +11,26 @@
   }
   .testimonial-wrap-2 {
     .testimonial-block {
-      padding: 15px;
+      padding: 25px;
+      @include tablet {
+        padding: 35px;
+      }
+      @include desktop {
+        padding: 50px;
+      }
       border-radius: 20px;
       transition: all 0.3s linear;
-      .row {
+      .testimonial-wrapper {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        @include tablet {
+          flex-direction: row;
+        }
+        display: flex;
+        .testimonial-thumb {
+          min-width: 250px;
+          margin-right: 20px;
+        }
       }
       .testimonial-thumb {
         display: flex;

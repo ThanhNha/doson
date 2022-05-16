@@ -27,7 +27,13 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 109px;
+    height: 50px;
+    @include tablet {
+      height: 70px;
+    }
+    @include desktop {
+      height: 109px;
+    }
   }
 
   .custom-shape-divider-top-1652169391 .shape-fill {
@@ -35,7 +41,13 @@
   }
   .wrapper-title-banner {
     position: absolute;
-    top: -250px;
+    top: -155px;
+    @include tablet {
+      top: -200px;
+    }
+    @include desktop {
+      top: -250px;
+    }
     right: 0;
     .section-title {
       text-align: right;
