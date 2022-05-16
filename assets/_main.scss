@@ -173,9 +173,11 @@ main {
   flex-direction: column;
   height: 100%;
   .blog-thumb {
+    border-radius: 15px;
     @include desktop {
-      border-radius: 15px;
+      border-radius: 30px;
     }
+
     overflow: hidden;
     // max-width: 300px;
     // max-height: 300px;
@@ -228,10 +230,10 @@ main {
     }
   }
   .news-image {
+    border-radius: 15px;
     @include desktop {
       border-radius: 30px;
     }
-    border-radius: 15px;
     overflow: hidden;
     max-height: 525px;
     img {

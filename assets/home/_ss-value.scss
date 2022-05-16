@@ -58,7 +58,13 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
+    height: 75px;
+    @include tablet {
+      height: 105px;
+    }
+    @include desktop {
+      height: 150px;
+    }
   }
 
   .custom-shape-divider-bottom-1652176518 .shape-fill {

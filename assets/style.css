@@ -9130,12 +9130,13 @@ main {
   height: 100%;
 }
 .card-blog .blog-thumb {
+  border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
 }
 @media (min-width: 992px) {
   .card-blog .blog-thumb {
-    border-radius: 15px;
+    border-radius: 30px;
   }
 }
 .card-blog .blog-thumb img {
@@ -10145,8 +10146,18 @@ section#main-banner .wrapper-title-banner {
   position: relative;
   display: block;
   width: 100%;
-  height: 109px;
+  height: 50px;
   transform: rotateY(180deg);
+}
+@media (min-width: 768px) {
+  #section-welcome .custom-shape-divider-bottom-1652169260 svg {
+    height: 70px;
+  }
+}
+@media (min-width: 992px) {
+  #section-welcome .custom-shape-divider-bottom-1652169260 svg {
+    height: 109px;
+  }
 }
 #section-welcome .custom-shape-divider-bottom-1652169260 .shape-fill {
   fill: #fed8a8;
@@ -10200,15 +10211,35 @@ section#main-banner .wrapper-title-banner {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 109px;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  #section-service .custom-shape-divider-top-1652169391 svg {
+    height: 70px;
+  }
+}
+@media (min-width: 992px) {
+  #section-service .custom-shape-divider-top-1652169391 svg {
+    height: 109px;
+  }
 }
 #section-service .custom-shape-divider-top-1652169391 .shape-fill {
   fill: #fed8a8;
 }
 #section-service .wrapper-title-banner {
   position: absolute;
-  top: -250px;
+  top: -155px;
   right: 0;
+}
+@media (min-width: 768px) {
+  #section-service .wrapper-title-banner {
+    top: -200px;
+  }
+}
+@media (min-width: 992px) {
+  #section-service .wrapper-title-banner {
+    top: -250px;
+  }
 }
 #section-service .wrapper-title-banner .section-title {
   text-align: right;
@@ -10344,7 +10375,17 @@ section#main-banner .wrapper-title-banner {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 75px;
+}
+@media (min-width: 768px) {
+  #section-value .custom-shape-divider-bottom-1652176518 svg {
+    height: 105px;
+  }
+}
+@media (min-width: 992px) {
+  #section-value .custom-shape-divider-bottom-1652176518 svg {
+    height: 150px;
+  }
 }
 #section-value .custom-shape-divider-bottom-1652176518 .shape-fill {
   fill: #ffffff;
@@ -10363,13 +10404,33 @@ section#main-banner .wrapper-title-banner {
   background: #f57e20;
 }
 #section-testimonial .testimonial-wrap-2 .testimonial-block {
-  padding: 15px;
+  padding: 25px;
   border-radius: 20px;
   transition: all 0.3s linear;
 }
-#section-testimonial .testimonial-wrap-2 .testimonial-block .row {
+@media (min-width: 768px) {
+  #section-testimonial .testimonial-wrap-2 .testimonial-block {
+    padding: 35px;
+  }
+}
+@media (min-width: 992px) {
+  #section-testimonial .testimonial-wrap-2 .testimonial-block {
+    padding: 50px;
+  }
+}
+#section-testimonial .testimonial-wrap-2 .testimonial-block .testimonial-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #section-testimonial .testimonial-wrap-2 .testimonial-block .testimonial-wrapper {
+    flex-direction: row;
+  }
+}
+#section-testimonial .testimonial-wrap-2 .testimonial-block .testimonial-wrapper .testimonial-thumb {
+  min-width: 250px;
+  margin-right: 20px;
 }
 #section-testimonial .testimonial-wrap-2 .testimonial-block .testimonial-thumb {
   display: flex;
