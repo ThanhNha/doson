@@ -34,7 +34,11 @@
   //code card bar right news
   .wrapper-bar {
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 15px;
+    @include desktop {
+      border-radius: 30px;
+    }
+
     background-color: $color-gray-200;
     position: sticky;
     top: 0;

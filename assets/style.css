@@ -9130,9 +9130,13 @@ main {
   height: 100%;
 }
 .card-blog .blog-thumb {
-  border-radius: 30px;
   overflow: hidden;
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .card-blog .blog-thumb {
+    border-radius: 15px;
+  }
 }
 .card-blog .blog-thumb img {
   -webkit-transition: all 0.2s ease-in-out;
@@ -9184,9 +9188,14 @@ main {
   color: #f57e20;
 }
 .card-news-hot .news-image {
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   max-height: 525px;
+}
+@media (min-width: 992px) {
+  .card-news-hot .news-image {
+    border-radius: 30px;
+  }
 }
 .card-news-hot .news-image img {
   -webkit-transition: all 0.2s ease-in-out;
@@ -9249,9 +9258,14 @@ main {
   color: #f57e20;
 }
 .card-news .news-image {
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   max-height: 250px;
+}
+@media (min-width: 992px) {
+  .card-news .news-image {
+    border-radius: 30px;
+  }
 }
 .card-news .news-image img {
   -webkit-transition: all 0.2s ease-in-out;
@@ -9303,9 +9317,19 @@ main {
   color: #f57e20;
 }
 .card-news-horizontal .news-image {
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
   max-height: 250px;
+}
+@media (min-width: 992px) {
+  .card-news-horizontal .news-image {
+    border-radius: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .card-news-horizontal .news-image {
+    border-radius: 30px;
+  }
 }
 .card-news-horizontal .news-image img {
   -webkit-transition: all 0.2s ease-in-out;
@@ -11352,11 +11376,16 @@ section#main-banner .wrapper-title-banner {
 }
 #page-news .wrapper-bar {
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: #e3e5e5;
   position: sticky;
   top: 0;
   left: 0;
+}
+@media (min-width: 992px) {
+  #page-news .wrapper-bar {
+    border-radius: 30px;
+  }
 }
 #page-news .wrapper-bar .card-news-hot .news-title {
   border: none;
@@ -11415,9 +11444,15 @@ section#main-banner .wrapper-title-banner {
   position: relative;
 }
 #page-recruit #recruit-section-2 .wrapper-items .wrapper-image {
-  position: absolute;
-  top: 10%;
-  left: -50px;
+  position: relative;
+  left: 0;
+}
+@media (min-width: 992px) {
+  #page-recruit #recruit-section-2 .wrapper-items .wrapper-image {
+    position: absolute;
+    top: 10%;
+    left: -50px;
+  }
 }
 #page-recruit #recruit-section-2 .wrapper-items .wrapper-image img {
   width: 100%;
