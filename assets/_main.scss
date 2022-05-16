@@ -303,6 +303,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin-top: 20px;
   @include transition;
   &:hover {
     .news-image {
