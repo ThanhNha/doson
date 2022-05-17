@@ -1,20 +1,28 @@
 .footer {
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: 25px;
   position: relative;
   background: $color-gradient-2;
   @include tablet {
-    padding-top: 70px;
+    padding-top: 36px;
   }
   @include desktop {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   i {
     font-size: 20px;
   }
   .footer-logo {
-    max-width: 135px;
-    max-height: 135px;
+    max-width: 100px;
+    max-height: 100px;
+    @include tablet {
+      max-width: 120px;
+      max-height: 120px;
+    }
+    @include desktop {
+      max-width: 135px;
+      max-height: 135px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -92,7 +100,7 @@
     }
   }
   .footer-menu a {
-    color: $color-brown-200;
+    color: $white;
     .icon-footer {
       display: block;
       padding: 5px;
