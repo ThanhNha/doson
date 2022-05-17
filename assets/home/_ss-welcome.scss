@@ -191,7 +191,9 @@
     bottom: 0px;
     left: 0;
     height: auto;
+    display: none;
     @include mobile {
+      display: block;
       height: 400px;
     }
     @include tablet {
