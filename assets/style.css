@@ -9807,26 +9807,38 @@ main {
 }
 .footer {
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: 25px;
   position: relative;
   background: linear-gradient(to left, #f57121, #fdbf66);
 }
 @media (min-width: 768px) {
   .footer {
-    padding-top: 70px;
+    padding-top: 36px;
   }
 }
 @media (min-width: 992px) {
   .footer {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 .footer i {
   font-size: 20px;
 }
 .footer .footer-logo {
-  max-width: 135px;
-  max-height: 135px;
+  max-width: 100px;
+  max-height: 100px;
+}
+@media (min-width: 768px) {
+  .footer .footer-logo {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .footer .footer-logo {
+    max-width: 135px;
+    max-height: 135px;
+  }
 }
 .footer .footer-logo img {
   width: 100%;
@@ -9895,7 +9907,7 @@ main {
   background: #fdc066;
 }
 .widget .footer-menu a {
-  color: #b35f27;
+  color: #fff;
 }
 .widget .footer-menu a .icon-footer {
   display: block;
