@@ -17,6 +17,7 @@ flexbox
 body {
   box-sizing: border-box;
   font-size: 18px !important;
+  line-height: 150%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: auto !important;
@@ -10996,7 +10997,7 @@ section#main-banner .wrapper-title-banner {
 #section-mkt .wrapper-main-service {
   position: relative;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 85%;
 }
 #section-mkt .wrapper-main-service .service .service-tag {
   display: inline-block;
@@ -11024,23 +11025,23 @@ section#main-banner .wrapper-title-banner {
   max-height: 410px;
 }
 #section-mkt .wrapper-main-service .service-1 .service-icon img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
 }
 #section-mkt .wrapper-main-service .service-2 .service-icon {
   display: flex;
   justify-content: flex-end;
 }
 #section-mkt .wrapper-main-service .service-2 .service-icon img {
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 300px;
+  max-height: 300px;
 }
 #section-mkt .wrapper-main-service .service-2 .service-info .row {
   flex-direction: row-reverse;
 }
 #section-mkt .wrapper-main-service .service-3 .service-icon img {
-  max-width: 410px;
-  max-height: 410px;
+  max-width: 350px;
+  max-height: 350px;
 }
 #section-mkt .minus-top {
   margin-top: 20px;
