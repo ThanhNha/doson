@@ -8905,7 +8905,7 @@ html {
 
   .sub-heading {
     font-size: 20px !important;
-    line-height: 150% !important;
+    line-height: 120% !important;
   }
 
   .p1 {
@@ -11616,6 +11616,149 @@ section#main-banner .wrapper-title-banner {
 }
 #section-table-recruit .wrapper-table table tbody tr td:first-child {
   border-left: 1px solid transparent;
+}
+
+#page-contact #contact-main-banner {
+  width: 100%;
+}
+#page-contact #contact-main-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page-contact #section-contact {
+  padding: 25px 0;
+}
+@media (min-width: 768px) {
+  #page-contact #section-contact {
+    padding: 36px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #page-contact #section-contact {
+    padding: 50px 0px;
+  }
+}
+#page-contact #section-contact .wrapper-items-contact {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  #page-contact #section-contact .wrapper-items-contact {
+    margin-top: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #page-contact #section-contact .wrapper-items-contact {
+    margin-top: 50px;
+  }
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item .item-icon {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: #eb3424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item .item-icon .icon i {
+  font-size: 50px;
+  color: #fff;
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item .line {
+  height: 1px;
+  width: 150px;
+  background-color: #eb3424;
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item .item-name {
+  margin-bottom: 10px;
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item .item-name span {
+  color: #6b6c6c;
+}
+#page-contact #section-contact .wrapper-items-contact .contact-item .item-description {
+  text-align: center;
+}
+#page-contact #section-contact .wrapper-form-contact {
+  margin-top: 45px;
+}
+@media (min-width: 768px) {
+  #page-contact #section-contact .wrapper-form-contact {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 992px) {
+  #page-contact #section-contact .wrapper-form-contact {
+    margin-top: 70px;
+  }
+}
+#page-contact #section-contact .wrapper-form-contact .form-sub-title {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #page-contact #section-contact .wrapper-form-contact .form-sub-title {
+    max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  #page-contact #section-contact .wrapper-form-contact .form-sub-title {
+    max-width: 50%;
+  }
+}
+#page-contact #section-contact .wrapper-form-contact .form-sub-title span {
+  color: #6b6c6c;
+}
+#page-contact #section-contact .wrapper-form-contact .form-contact {
+  margin-top: 45px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #page-contact #section-contact .wrapper-form-contact .form-contact {
+    margin-top: 56px;
+    max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  #page-contact #section-contact .wrapper-form-contact .form-contact {
+    max-width: 50%;
+    margin-top: 70px;
+  }
+}
+#page-contact #section-contact .wrapper-form-contact .form-contact .form-control {
+  padding: 15px 20px;
+  background-color: #fdc066;
+  color: #6b6c6c;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#page-contact #section-contact .wrapper-form-contact .form-contact .form-control:focus {
+  background-color: transparent !important;
+  border: 1px solid #f57e20 !important;
+  box-shadow: none;
+}
+#page-contact #section-contact .wrapper-form-contact .form-contact .btn__form {
+  display: block;
+  width: 100%;
+}
+
+#section-map .wrapper-map iframe {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
