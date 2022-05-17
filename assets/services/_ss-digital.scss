@@ -1,8 +1,16 @@
 #section-digital {
   position: relative;
   background: $color-red-200;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include tablet {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
   .custom-shape-divider-top-1652350317 {
     position: absolute;
     top: 0;
@@ -16,7 +24,10 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height: 50px;
+    @include tablet {
+      height: 75px;
+    }
     @include desktop {
       height: 150px;
     }
@@ -115,6 +126,10 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 100px;
+    height: 50px;
+    @include tablet {
+      height: 75px;
+    }
     @include desktop {
       height: 150px;
     }

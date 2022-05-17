@@ -11060,8 +11060,20 @@ section#main-banner .wrapper-title-banner {
 #section-digital {
   position: relative;
   background: #fed8a8;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  #section-digital {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+@media (min-width: 992px) {
+  #section-digital {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }
 #section-digital .custom-shape-divider-top-1652350317 {
   position: absolute;
@@ -11075,8 +11087,13 @@ section#main-banner .wrapper-title-banner {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 100px;
+  height: 50px;
   transform: rotateY(180deg);
+}
+@media (min-width: 768px) {
+  #section-digital .custom-shape-divider-top-1652350317 svg {
+    height: 75px;
+  }
 }
 @media (min-width: 992px) {
   #section-digital .custom-shape-divider-top-1652350317 svg {
@@ -11192,6 +11209,12 @@ section#main-banner .wrapper-title-banner {
   display: block;
   width: calc(100% + 1.3px);
   height: 100px;
+  height: 50px;
+}
+@media (min-width: 768px) {
+  #section-digital .custom-shape-divider-bottom-1652411159 svg {
+    height: 75px;
+  }
 }
 @media (min-width: 992px) {
   #section-digital .custom-shape-divider-bottom-1652411159 svg {
@@ -11203,8 +11226,13 @@ section#main-banner .wrapper-title-banner {
 }
 
 #section-reative {
-  padding: 40px 0px;
+  padding: 20px 0px;
   position: relative;
+}
+@media (min-width: 992px) {
+  #section-reative {
+    padding: 40px 0px;
+  }
 }
 #section-reative .wrapper-reative {
   position: relative;
@@ -11213,7 +11241,7 @@ section#main-banner .wrapper-title-banner {
 }
 @media (min-width: 1200px) {
   #section-reative .wrapper-reative {
-    height: 350px;
+    height: 250px;
   }
 }
 #section-reative .wrapper-reative .wapper-reative-content {
@@ -11330,7 +11358,12 @@ section#main-banner .wrapper-title-banner {
   margin: 0;
 }
 #section-reative .wrapper-reative.bottom {
-  margin-top: 40px;
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  #section-reative .wrapper-reative.bottom {
+    margin-top: 140px;
+  }
 }
 @media (min-width: 1200px) {
   #section-reative .wrapper-reative.bottom .reative-row {
@@ -11355,9 +11388,19 @@ section#main-banner .wrapper-title-banner {
 
 #section-service-flow {
   background: #f6f7f8;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
+}
+@media (min-width: 768px) {
+  #section-service-flow {
+    padding-top: 70px;
+  }
+}
+@media (min-width: 992px) {
+  #section-service-flow {
+    padding-top: 100px;
+  }
 }
 @media (min-width: 992px) {
   #section-service-flow {
@@ -11376,8 +11419,13 @@ section#main-banner .wrapper-title-banner {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 100px;
+  height: 75px;
   transform: rotateY(180deg);
+}
+@media (min-width: 768px) {
+  #section-service-flow .custom-shape-divider-top-1652425003 svg {
+    height: 100px;
+  }
 }
 @media (min-width: 992px) {
   #section-service-flow .custom-shape-divider-top-1652425003 svg {
