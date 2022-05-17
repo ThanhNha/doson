@@ -95,35 +95,6 @@ $(".wrapper-blogs").slick({
     },
   ],
 });
-
-function header() {
-  var header = gsap.to("#header", { y: "-=300", duration: 0.2, ease: "power2.in", paused: true });
-  //fixed header
-  ScrollTrigger.create({
-    trigger: "#header",
-    start: "10px top",
-    end: 99999,
-    toggleClass: { className: "scrolled", targets: "#header" },
-    onUpdate: ({ progress, direction, isActive }) => {
-      if (direction == -1) {
-        header.reverse();
-      }
-      if (direction == 1) {
-        header.play();
-      } else if (direction == 1 && isActive == true) {
-        header.play();
-      }
-    },
-  });
-
-  const hamburger = document.querySelector(".hamburger");
-
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-  });
-}
-header();
-
 $(".wrapper-cards-flow.mobile").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -167,3 +138,31 @@ $(".wrapper-cards-flow.mobile").slick({
     },
   ],
 });
+
+function header() {
+  var header = gsap.to("#header", { y: "-=300", duration: 0.2, ease: "power2.in", paused: true });
+  //fixed header
+  ScrollTrigger.create({
+    trigger: "#header",
+    start: "10px top",
+    end: 99999,
+    toggleClass: { className: "scrolled", targets: "#header" },
+    onUpdate: ({ progress, direction, isActive }) => {
+      if (direction == -1) {
+        header.reverse();
+      }
+      if (direction == 1) {
+        header.play();
+      } else if (direction == 1 && isActive == true) {
+        header.play();
+      }
+    },
+  });
+
+  const hamburger = document.querySelector(".hamburger");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+  });
+}
+header();

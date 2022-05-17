@@ -66,7 +66,7 @@ images.forEach((el) => {
   });
 });
 
-// Fade In Transitions
+// // Fade In Transitions
 function fadeInUpInit() {
   gsap.utils.toArray(".animation-wrapper").forEach((section) => {
     const elems = section.querySelectorAll(".animation-item");
