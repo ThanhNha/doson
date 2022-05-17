@@ -1,12 +1,15 @@
 #section-reative {
-  padding: 40px 0px;
+  padding: 20px 0px;
+  @include desktop {
+    padding: 40px 0px;
+  }
   position: relative;
   .wrapper-reative {
     position: relative;
     height: auto;
 
     @include large-desktop {
-      height: 350px;
+      height: 250px;
     }
     width: 100%;
     .wapper-reative-content {
@@ -118,7 +121,10 @@
     }
   }
   .wrapper-reative.bottom {
-    margin-top: 40px;
+    margin-top: 30px;
+    @include desktop {
+      margin-top: 140px;
+    }
     .reative-row {
       @include large-desktop {
         float: right;

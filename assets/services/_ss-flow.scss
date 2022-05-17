@@ -1,6 +1,13 @@
 #section-service-flow {
   background: $color-gray-100;
-  padding-top: 100px;
+  padding-top: 50px;
+  @include tablet {
+    padding-top: 70px;
+  }
+  @include desktop {
+    padding-top: 100px;
+  }
+
   padding-bottom: 50px;
   position: relative;
   @include desktop {
@@ -20,7 +27,10 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height: 75px;
+    @include tablet {
+      height: 100px;
+    }
     @include desktop {
       height: 150px;
     }
