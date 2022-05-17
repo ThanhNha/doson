@@ -1,6 +1,6 @@
 #header {
   top: 0;
-  transition: all 0.3s linear;
+  @include transition;
   z-index: 9999;
   background: $color-gradient-2;
   .collapse.show {
@@ -17,7 +17,7 @@
         height: 3px;
         display: block;
         color: #fff;
-        transition: 0.5s;
+        @include transition;
         background-color: #fff;
         position: absolute;
         width: 80%;
@@ -64,17 +64,26 @@
     text-align: center;
     color: $color-red-500;
     text-transform: uppercase;
-
+    margin-top: 20px;
     display: block;
     @include desktop {
       display: inline-block;
+      margin-top: 0px;
       margin-left: 40px;
     }
   }
   .navbar-brand {
-    width: 135px;
-    height: 70px;
+    width: 68px;
+    height: 35px;
     padding: 0 !important;
+    @include tablet {
+      height: 50px;
+      width: 98px;
+    }
+    @include desktop {
+      width: 135px;
+      height: 70px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -83,15 +92,18 @@
   }
   #navbarmain {
     padding: 20px 0px;
-    transition: all 0.3s linear;
+    @include transition;
     .nav-link {
       font-weight: 600;
       padding: 10px 15px;
       color: $black;
-      // font-family: $primary-font;
+      text-align: center;
       text-transform: capitalize;
       font-size: 16px;
-      transition: all 0.25s ease;
+      @include transition;
+      @include desktop {
+        text-align: left;
+      }
     }
   }
 
@@ -212,7 +224,7 @@
       color: $white;
       text-transform: uppercase;
       font-size: 18px;
-      transition: all 0.25s ease;
+      @include transition;
     }
   }
 
@@ -249,7 +261,7 @@
 
   .dropdown:hover .dropdown-menu {
     visibility: visible;
-    transition: all 0.45s ease 0s;
+    @include transition;
     opacity: 1;
   }
   .dropdown-item {
