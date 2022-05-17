@@ -1,15 +1,12 @@
 html {
   scroll-behavior: smooth;
 }
+body.fixed {
+  overflow: hidden;
+}
 main {
-  padding-top: 60px;
-  @include tablet {
-    padding-top: 70px;
-  }
+  padding-top: 50px;
   @include desktop {
-    padding-top: 80px;
-  }
-  @include large-desktop {
     padding-top: 80px;
   }
 }

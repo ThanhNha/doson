@@ -160,9 +160,10 @@ function header() {
   });
 
   const hamburger = document.querySelector(".hamburger");
-
+  let body = document.querySelector("body");
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
+    body.classList.toggle("fixed");
   });
 }
 header();
