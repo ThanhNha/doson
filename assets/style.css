@@ -8938,7 +8938,7 @@ html {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 @media (min-width: 768px) {
   main {
@@ -9378,7 +9378,11 @@ main {
 
 #header {
   top: 0;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   z-index: 9999;
   background: linear-gradient(to left, #f57121, #fdbf66);
 }
@@ -9397,7 +9401,11 @@ main {
   height: 3px;
   display: block;
   color: #fff;
-  transition: 0.5s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: #fff;
   position: absolute;
   width: 80%;
@@ -9437,18 +9445,32 @@ main {
   text-align: center;
   color: #eb3424;
   text-transform: uppercase;
+  margin-top: 20px;
   display: block;
 }
 @media (min-width: 992px) {
   #header .btn__cta {
     display: inline-block;
+    margin-top: 0px;
     margin-left: 40px;
   }
 }
 #header .navbar-brand {
-  width: 135px;
-  height: 70px;
+  width: 68px;
+  height: 35px;
   padding: 0 !important;
+}
+@media (min-width: 768px) {
+  #header .navbar-brand {
+    height: 50px;
+    width: 98px;
+  }
+}
+@media (min-width: 992px) {
+  #header .navbar-brand {
+    width: 135px;
+    height: 70px;
+  }
 }
 #header .navbar-brand img {
   width: 100%;
@@ -9457,15 +9479,29 @@ main {
 }
 #header #navbarmain {
   padding: 20px 0px;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #header #navbarmain .nav-link {
   font-weight: 600;
   padding: 10px 15px;
   color: #383031;
+  text-align: center;
   text-transform: capitalize;
   font-size: 16px;
-  transition: all 0.25s ease;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (min-width: 992px) {
+  #header #navbarmain .nav-link {
+    text-align: left;
+  }
 }
 #header .dropdown-toggle::after {
   display: none;
@@ -9555,7 +9591,11 @@ main {
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
-  transition: all 0.25s ease;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media (min-width: 992px) {
   #header #navbar .nav-link {
@@ -9588,7 +9628,11 @@ main {
 }
 #header .dropdown:hover .dropdown-menu {
   visibility: visible;
-  transition: all 0.45s ease 0s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 #header .dropdown-item {
