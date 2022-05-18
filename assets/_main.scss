@@ -5,7 +5,10 @@ body.fixed {
   overflow: hidden;
 }
 main {
-  padding-top: 50px;
+  padding-top: 30px;
+  @include tablet {
+    padding-top: 45px;
+  }
   @include desktop {
     padding-top: 100px;
   }

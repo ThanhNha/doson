@@ -8943,7 +8943,12 @@ body.fixed {
 }
 
 main {
-  padding-top: 50px;
+  padding-top: 30px;
+}
+@media (min-width: 768px) {
+  main {
+    padding-top: 45px;
+  }
 }
 @media (min-width: 992px) {
   main {
@@ -9375,6 +9380,8 @@ main {
 }
 
 #header {
+  padding-top: 5px;
+  min-height: 50px;
   top: 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -9384,12 +9391,17 @@ main {
   z-index: 9999;
   background: linear-gradient(to left, #f57121, #fdbf66);
 }
+@media (min-width: 992px) {
+  #header {
+    padding: 0;
+  }
+}
 #header .collapse.show {
   height: 100vh !important;
 }
 #header .line {
   position: absolute;
-  top: 75px;
+  top: 45px;
   background: #fff;
   height: 1px;
   width: 100%;
@@ -9399,6 +9411,7 @@ main {
 @media (min-width: 768px) {
   #header .line {
     display: block;
+    top: 67px;
   }
 }
 @media (min-width: 992px) {
@@ -9407,12 +9420,24 @@ main {
   }
 }
 #header #navbar {
+  padding: 0px;
   background: transparent !important;
 }
+@media (min-width: 768px) {
+  #header #navbar {
+    padding: 0.5rem 1rem;
+  }
+}
 #header #navbar .hamburger {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   position: relative;
+}
+@media (min-width: 768px) {
+  #header #navbar .hamburger {
+    width: 36px;
+    height: 36px;
+  }
 }
 #header #navbar .hamburger .bar {
   height: 3px;
@@ -9473,9 +9498,15 @@ main {
   }
 }
 #header .navbar-brand {
+  margin-top: 0px;
   width: 98px;
-  height: 50px;
+  height: 35px;
   padding: 0 !important;
+}
+@media (min-width: 768px) {
+  #header .navbar-brand {
+    height: 50px;
+  }
 }
 @media (min-width: 992px) {
   #header .navbar-brand {
@@ -9516,9 +9547,6 @@ main {
 }
 #header .dropdown-toggle::after {
   display: none;
-}
-#header .navbar-brand {
-  margin-top: 10px;
 }
 @media (min-width: 992px) {
   #header .dropdown .dropdown-menu {
