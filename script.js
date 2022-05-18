@@ -140,11 +140,11 @@ $(".wrapper-cards-flow.mobile").slick({
 });
 
 function header() {
-  var header = gsap.to("#header", { y: "-=300", duration: 0.2, ease: "power2.in", paused: true });
+  var header = gsap.to("#header", { y: "-=300", duration: 0.1, ease: "power2.in", paused: true });
   //fixed header
   ScrollTrigger.create({
     trigger: "#header",
-    start: "10px top",
+    start: "100px top",
     end: 99999,
     toggleClass: { className: "scrolled", targets: "#header" },
     onUpdate: ({ progress, direction, isActive }) => {

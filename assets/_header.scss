@@ -307,7 +307,8 @@
 }
 
 #header {
-  box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+  // box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+  border-bottom: 2px solid $white;
   position: fixed;
   width: 100%;
 }
