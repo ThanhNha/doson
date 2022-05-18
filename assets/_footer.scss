@@ -158,8 +158,15 @@
   }
   .btn {
     position: absolute;
-    right: 15px;
-    top: 10px;
+    right: -1px;
+    top: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: 0px 25px;
   }
   .main-btn {
     background: $color-red-400;

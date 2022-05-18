@@ -3,8 +3,12 @@
   min-height: 400px;
   background: #fed8a8;
   .wrapper-service {
-    padding: 40px 0;
+    padding: 20px 0;
+    @include tablet {
+      padding: 28px 0;
+    }
     @include desktop {
+      padding: 40px 0;
       position: absolute;
       top: -200px;
       z-index: 2;
