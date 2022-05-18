@@ -9034,7 +9034,7 @@ main {
   display: flex;
 }
 .wrapper-title .section-title span {
-  margin-left: 20px;
+  margin-left: 0px;
   display: inline-block;
   color: #fff;
   padding: 10px 15px;
@@ -9044,6 +9044,7 @@ main {
 }
 @media (min-width: 768px) {
   .wrapper-title .section-title span {
+    margin-left: 20px;
     margin-top: 0;
   }
 }
@@ -9062,6 +9063,8 @@ main {
 
 .wrapper-title {
   max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
