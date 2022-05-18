@@ -44,9 +44,6 @@
       height: 150px;
       color: $color-brown-300;
       @include transition;
-      &:hover {
-        background: $color-red-300;
-      }
       @include tablet {
         width: 180px;
         height: 180px;

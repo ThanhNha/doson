@@ -6,6 +6,21 @@
   .collapse.show {
     height: 100vh !important;
   }
+  .line {
+    position: absolute;
+    top: 75px;
+    background: #fff;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
   #navbar {
     background: transparent !important;
     //Hamburger menu
@@ -95,9 +110,7 @@
       color: $black;
       text-transform: capitalize;
       font-size: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      text-align: center;
       @include tablet {
         display: block;
       }
@@ -148,6 +161,7 @@
         color: $color-red-500;
       }
     }
+
     .dropdown-menu.show {
       @media (max-width: 991px) {
         display: block;
@@ -163,6 +177,12 @@
           color: $white;
         }
       }
+    }
+  }
+  .dropdown.show {
+    .nav-link::before {
+      transform: rotate(180deg);
+      top: 10px;
     }
   }
 
@@ -258,6 +278,26 @@
 
   .navbar-brand {
     font-weight: 600;
+  }
+  .nav-item.dropdown {
+    .nav-link {
+      position: relative;
+      padding-right: 25px !important;
+      &:before {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        content: "\eac8";
+        font-family: "icofont" !important;
+        @include transition;
+      }
+    }
+    &:hover {
+      .nav-link::before {
+        transform: rotate(180deg);
+        top: 10px;
+      }
+    }
   }
 
   .dropdown-menu {
