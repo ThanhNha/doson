@@ -144,7 +144,7 @@ function header() {
   //fixed header
   ScrollTrigger.create({
     trigger: "#header",
-    start: "100px top",
+    start: "200px top",
     end: 99999,
     toggleClass: { className: "scrolled", targets: "#header" },
     onUpdate: ({ progress, direction, isActive }) => {

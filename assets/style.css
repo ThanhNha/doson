@@ -8766,7 +8766,7 @@ html {
 }
 
 .main-btn.border {
-  background: transparent;
+  background: transparent !important;
   color: #eb3424;
   border: 1px solid #eb3424 !important;
   -webkit-transition: all 0.2s ease-in-out;
@@ -10462,7 +10462,7 @@ section#main-banner .wrapper-title-banner {
     padding-bottom: 175px;
   }
 }
-#section-value .image-right {
+#section-value .image-right video {
   width: 100%;
 }
 #section-value .wrapper-title-banner .section-title h1 {
@@ -11023,17 +11023,51 @@ section#main-banner .wrapper-title-banner {
   position: relative;
   padding-top: 25px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 #section-mkt .bg-video {
   position: absolute;
   width: 100%;
+  top: 0;
   height: 100%;
   z-index: -1;
+  opacity: 0.5;
+  display: none;
+}
+@media (min-width: 992px) {
+  #section-mkt .bg-video {
+    display: block;
+    top: 60px;
+  }
+}
+@media (min-width: 1600px) {
+  #section-mkt .bg-video {
+    top: -100px;
+  }
 }
 #section-mkt .bg-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (min-width: 992px) {
+  #section-mkt .bg-video video {
+    width: 1440px;
+    height: 850px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-mkt .bg-video video {
+    width: 1440px;
+    height: 850px;
+  }
+}
+@media (min-width: 1500px) {
+  #section-mkt .bg-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 @media (min-width: 768px) {
   #section-mkt {
@@ -11054,7 +11088,7 @@ section#main-banner .wrapper-title-banner {
 #section-mkt .wrapper-main-service .service .service-tag {
   display: inline-block;
   padding: 12px;
-  background: linear-gradient(to left, #fdbf66, #ffffff);
+  background: linear-gradient(to left, #feead1, #ffffff);
   font-weight: bold;
   color: #f57e20;
 }
@@ -11065,6 +11099,9 @@ section#main-banner .wrapper-title-banner {
 }
 #section-mkt .wrapper-main-service .service .wrapper-btn {
   margin-top: 20px;
+}
+#section-mkt .wrapper-main-service .service .wrapper-btn .main-btn {
+  background: #eb3424;
 }
 #section-mkt .wrapper-main-service .service .wrapper-btn .btn-inline {
   display: inline-block;
@@ -11080,7 +11117,6 @@ section#main-banner .wrapper-title-banner {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 90px;
   font-weight: bold;
   color: #fff;
 }
@@ -11095,6 +11131,12 @@ section#main-banner .wrapper-title-banner {
 }
 #section-mkt .wrapper-main-service .service-1 .service-icon::before {
   content: "01";
+  font-size: 60px;
+}
+@media (min-width: 768px) {
+  #section-mkt .wrapper-main-service .service-1 .service-icon::before {
+    font-size: 70px;
+  }
 }
 #section-mkt .wrapper-main-service .service-2 .service-icon {
   position: relative;
@@ -11103,6 +11145,7 @@ section#main-banner .wrapper-title-banner {
 }
 #section-mkt .wrapper-main-service .service-2 .service-icon::before {
   content: "02";
+  font-size: 65px;
   width: 300px;
   right: 0px;
   left: auto;
@@ -11110,6 +11153,11 @@ section#main-banner .wrapper-title-banner {
   text-align: center;
   transform: translateY(-50%);
   z-index: 1000;
+}
+@media (min-width: 768px) {
+  #section-mkt .wrapper-main-service .service-2 .service-icon::before {
+    font-size: 80px;
+  }
 }
 #section-mkt .wrapper-main-service .service-2 .service-icon img {
   transform: rotate(300deg);
@@ -11119,6 +11167,9 @@ section#main-banner .wrapper-title-banner {
 #section-mkt .wrapper-main-service .service-2 .service-info .row {
   flex-direction: row-reverse;
 }
+#section-mkt .wrapper-main-service .service-2 .service-tag {
+  background: linear-gradient(to right, #feead1, #ffffff);
+}
 #section-mkt .wrapper-main-service .service-3 .service-icon {
   position: relative;
   max-width: 350px;
@@ -11126,6 +11177,12 @@ section#main-banner .wrapper-title-banner {
 }
 #section-mkt .wrapper-main-service .service-3 .service-icon::before {
   content: "03";
+  font-size: 70px;
+}
+@media (min-width: 768px) {
+  #section-mkt .wrapper-main-service .service-3 .service-icon::before {
+    font-size: 90px;
+  }
 }
 #section-mkt .minus-top {
   margin-top: 20px;
@@ -11617,7 +11674,7 @@ section#main-banner .wrapper-title-banner {
 
 #section-banner-news {
   position: relative;
-  min-height: 50vh;
+  min-height: 300px;
 }
 @media (min-width: 768px) {
   #section-banner-news {
@@ -11626,8 +11683,31 @@ section#main-banner .wrapper-title-banner {
 }
 @media (min-width: 992px) {
   #section-banner-news {
-    min-height: 100vh;
+    min-height: 650px;
   }
+}
+#section-banner-news .banner-img {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-banner-news .banner-img {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  #section-banner-news .banner-img {
+    display: block;
+    bottom: 10%;
+    left: 10%;
+  }
+}
+#section-banner-news .banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 #section-banner-news .banner-news {
   position: absolute;
@@ -11637,6 +11717,7 @@ section#main-banner .wrapper-title-banner {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: -1;
 }
 #section-banner-news .banner-news video {
   width: 100%;
