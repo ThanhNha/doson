@@ -87,7 +87,6 @@
         }
         @include desktop {
           max-width: 50%;
-
           margin-top: 70px;
         }
         .form-control {
@@ -102,6 +101,10 @@
             border: 1px solid $color-red-400 !important;
             box-shadow: none;
           }
+        }
+        textarea {
+          background-color: transparent !important;
+          border: 1px solid $color-red-400 !important;
         }
         .btn__form {
           display: block;

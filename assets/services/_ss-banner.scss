@@ -1,6 +1,7 @@
 #section-bannerService {
   min-height: 500px;
   background: $color-gradient-2;
+  overflow: hidden;
   .wrapper-form {
     padding: 40px 0;
     @include tablet {
