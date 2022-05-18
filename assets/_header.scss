@@ -75,13 +75,20 @@
         opacity: 0;
       }
       .active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(-315deg);
-        transform: translateY(8px) rotate(-315deg);
+        -webkit-transform: translateY(9px) rotate(-315deg);
+        transform: translateY(9px) rotate(-315deg);
         width: 100%;
       }
       .active .bar:nth-child(3) {
         -webkit-transform: translateY(-10px) rotate(-45deg);
         transform: translateY(-10px) rotate(-45deg);
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      .active .bar:nth-child(1) {
+        -webkit-transform: translateY(5px) rotate(-315deg);
+        transform: translateY(5px) rotate(-315deg);
         width: 100%;
       }
     }

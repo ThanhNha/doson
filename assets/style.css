@@ -9470,13 +9470,20 @@ main {
     opacity: 0;
   }
   #header #navbar .active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(-315deg);
-    transform: translateY(8px) rotate(-315deg);
+    -webkit-transform: translateY(9px) rotate(-315deg);
+    transform: translateY(9px) rotate(-315deg);
     width: 100%;
   }
   #header #navbar .active .bar:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(-45deg);
     transform: translateY(-10px) rotate(-45deg);
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #header #navbar .active .bar:nth-child(1) {
+    -webkit-transform: translateY(5px) rotate(-315deg);
+    transform: translateY(5px) rotate(-315deg);
     width: 100%;
   }
 }
