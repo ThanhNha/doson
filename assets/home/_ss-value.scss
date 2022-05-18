@@ -5,6 +5,9 @@
   @include desktop {
     padding-bottom: 175px;
   }
+  .image-right {
+    width: 100%;
+  }
   .wrapper-title-banner {
     .section-title {
       h1 {
@@ -25,9 +28,6 @@
     height: 150px;
     background: $white;
     @include transition;
-    &:hover {
-      background: $color-red-300;
-    }
     @include tablet {
       width: 180px;
       height: 180px;
@@ -49,7 +49,7 @@
   }
   .custom-shape-divider-bottom-1652176518 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
