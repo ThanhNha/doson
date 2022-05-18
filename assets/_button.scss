@@ -30,7 +30,7 @@
   }
 }
 .main-btn.border {
-  background: transparent;
+  background: transparent !important;
   color: $color-red-500;
   border: 1px solid $color-red-500 !important;
   &:focus {
