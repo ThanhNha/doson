@@ -101,6 +101,7 @@
   }
   .footer-menu a {
     color: $white;
+    @include transition;
     .icon-footer {
       display: block;
       padding: 5px;
