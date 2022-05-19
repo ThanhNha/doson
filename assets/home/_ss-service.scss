@@ -43,9 +43,12 @@
     fill: #fed8a8;
   }
   .wrapper-title-banner {
-    position: absolute;
-    top: -155px;
+    position: relative;
+    top: auto;
+
     @include tablet {
+      margin-top: auto;
+      position: absolute;
       top: -200px;
     }
     @include desktop {
@@ -54,6 +57,10 @@
     right: 0;
     .section-title {
       text-align: right;
+      margin-top: 0px;
+      @include desktop {
+        margin-top: 25px;
+      }
       h1 {
         color: $color-red-400;
       }
@@ -131,6 +138,14 @@
     }
     .service-description {
       text-align: center;
+    }
+  }
+  .service-item:nth-child(2),
+  .service-item:nth-child(3) {
+    .service-icon {
+      i {
+        font-size: 45px !important;
+      }
     }
   }
 }

@@ -21,7 +21,7 @@ $(".testimonial-wrap-2").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        centerPadding: "200px",
+        centerPadding: "100px",
       },
     },
     {
@@ -29,7 +29,7 @@ $(".testimonial-wrap-2").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerPadding: "100px",
+        centerPadding: "80px",
       },
     },
     {
