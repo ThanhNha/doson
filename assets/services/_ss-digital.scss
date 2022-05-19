@@ -66,12 +66,13 @@
       max-width: 90%;
       margin-left: auto;
       margin-right: auto;
-    }
-    &:hover {
-      background: $color-red-300;
-      .service-icon {
-        img {
-          transform: scale(1.1);
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-15px) !important;
+        .service-icon {
+          img {
+            transform: scale(1.1);
+          }
         }
       }
     }
