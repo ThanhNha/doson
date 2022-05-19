@@ -177,6 +177,10 @@
     text-align: center;
     border-radius: 100%;
     padding-top: 12px;
+    @include transition;
+    &:hover {
+      background: $color-brown-300;
+    }
   }
 }
 

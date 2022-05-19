@@ -8872,6 +8872,27 @@ html {
   background: #eb3424;
 }
 
+.button {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+
 .font-regular {
   font-weight: 200 !important;
 }
@@ -8950,7 +8971,7 @@ html {
 
   .h2 {
     font-size: 56px !important;
-    line-height: 150% !important;
+    line-height: 120% !important;
   }
 
   .h3 {
@@ -9037,6 +9058,7 @@ main {
   margin-bottom: 0px !important;
 }
 .section-title .divider {
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -9597,7 +9619,7 @@ main {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   #header #navbarmain {
     padding-top: 20px;
   }
@@ -10144,6 +10166,14 @@ main {
   text-align: center;
   border-radius: 100%;
   padding-top: 12px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.footer-socials li a:hover {
+  background: #87381c;
 }
 
 .widget-contact h6 {
@@ -10403,6 +10433,11 @@ section#main-banner .wrapper-title-banner {
   font-weight: bold;
   line-height: 120% !important;
   padding-top: 0px;
+}
+@media (min-width: 480px) {
+  #section-welcome .wrapper-title-banner .section-title .sub-title {
+    padding-bottom: 200px;
+  }
 }
 @media (min-width: 768px) {
   #section-welcome .wrapper-title-banner .section-title .sub-title {
