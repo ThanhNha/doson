@@ -8952,7 +8952,7 @@ main {
 }
 @media (min-width: 992px) {
   main {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -9518,7 +9518,7 @@ main {
 @media (min-width: 992px) {
   #header .navbar-brand {
     width: 135px;
-    height: 70px;
+    height: 65px;
   }
 }
 #header .navbar-brand img {
@@ -9527,7 +9527,7 @@ main {
   object-fit: scale-down;
 }
 #header #navbarmain {
-  padding: 20px 0px;
+  padding: 5px 0px;
   margin: 0 auto;
   max-width: 90%;
   -webkit-transition: all 0.2s ease-in-out;
@@ -9535,6 +9535,13 @@ main {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media (min-width: 992px) {
+  #header #navbarmain .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 #header #navbarmain .nav-link {
   font-weight: 600;
