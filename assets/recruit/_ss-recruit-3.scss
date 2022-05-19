@@ -32,7 +32,7 @@
         color: $color-red-400;
         text-transform: uppercase;
         &:first-child {
-          border-left: 1px solid transparent;
+          border-left: 0px solid transparent;
         }
 
         @include tablet {
@@ -53,13 +53,13 @@
         }
         tr td {
           vertical-align: middle;
-          border-bottom: 1px solid transparent;
-          border-top: 1px solid transparent;
+          border-bottom: 0px solid transparent;
+          border-top: 0px solid transparent;
           padding: 15px;
           border-left: 1px solid $color-red-400;
           color: $color-gray-500;
           &:first-child {
-            border-left: 1px solid transparent;
+            border-left: 0px solid transparent;
           }
         }
       }

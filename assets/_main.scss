@@ -31,9 +31,12 @@ main {
     margin-top: 0;
     margin-bottom: 50px;
   }
-  //   h2 {
-  //     color: $title-color;
-  //   }
+  h1 {
+    margin-bottom: 0px !important;
+  }
+  .divider {
+    margin-bottom: 20px;
+  }
 }
 .wrapper-title-service {
   .section-title {
@@ -180,11 +183,11 @@ main {
   flex-direction: column;
   height: 100%;
   .blog-thumb {
+    display: block;
     border-radius: 15px;
     @include desktop {
       border-radius: 30px;
     }
-
     overflow: hidden;
     // max-width: 300px;
     // max-height: 300px;
@@ -213,7 +216,7 @@ main {
   &:hover {
     .blog-thumb {
       img {
-        transform: scale(1.1);
+        transform: scale(1.1) !important;
       }
     }
   }

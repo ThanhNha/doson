@@ -94,15 +94,25 @@
 
     .service-icon {
       margin: 0 auto;
+      width: 100px;
+      height: 100px;
       max-width: 105px;
       max-height: 105px;
       border-radius: 100%;
       overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      background: $color-red-500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        i {
+          transform: scale(1.1);
+        }
+      }
+      i {
         @include transition;
+        color: $white;
+        font-size: 60px;
       }
     }
     .line {

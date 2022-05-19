@@ -8979,6 +8979,12 @@ main {
     margin-bottom: 50px;
   }
 }
+.section-title h1 {
+  margin-bottom: 0px !important;
+}
+.section-title .divider {
+  margin-bottom: 20px;
+}
 
 .wrapper-title-service .section-title {
   display: flex;
@@ -9138,6 +9144,7 @@ main {
   height: 100%;
 }
 .card-blog .blog-thumb {
+  display: block;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -9177,7 +9184,7 @@ main {
   color: #f57e20;
 }
 .card-blog:hover .blog-thumb img {
-  transform: scale(1.1);
+  transform: scale(1.1) !important;
 }
 
 .card-news-hot {
@@ -10096,9 +10103,35 @@ main {
 
 section#main-banner {
   position: relative;
-  min-height: 800px;
-  background: linear-gradient(to right, #f57121, #fdbf66);
-  height: 100vh;
+  min-height: 350px;
+}
+@media (min-width: 768px) {
+  section#main-banner {
+    min-height: 80vh;
+  }
+}
+@media (min-width: 992px) {
+  section#main-banner {
+    min-height: 850px;
+  }
+}
+@media (min-width: 1200px) {
+  section#main-banner {
+    min-height: 900px;
+  }
+}
+section#main-banner .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+section#main-banner .bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 section#main-banner .custom-shape-divider-bottom-1652161885 {
   display: none;
@@ -10114,24 +10147,20 @@ section#main-banner .custom-shape-divider-bottom-1652161885 {
     line-height: 0;
   }
 }
-section#main-banner .custom-shape-divider-bottom-1652161885 svg {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 189px;
-}
-section#main-banner .custom-shape-divider-bottom-1652161885 .shape-fill {
-  fill: #ffffff;
-}
 section#main-banner .wrapper-title-banner {
-  top: 50px;
+  top: 30px;
   position: relative;
+}
+@media (min-width: 768px) {
+  section#main-banner .wrapper-title-banner {
+    top: 70px;
+  }
 }
 @media (min-width: 1200px) {
   section#main-banner .wrapper-title-banner {
     max-width: 40%;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 0px;
   }
 }
@@ -10504,20 +10533,28 @@ section#main-banner .wrapper-title-banner {
 }
 #section-service .service-item .service-icon {
   margin: 0 auto;
+  width: 100px;
+  height: 100px;
   max-width: 105px;
   max-height: 105px;
   border-radius: 100%;
   overflow: hidden;
+  background: #eb3424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#section-service .service-item .service-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#section-service .service-item .service-icon:hover i {
+  transform: scale(1.1);
+}
+#section-service .service-item .service-icon i {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  color: #fff;
+  font-size: 60px;
 }
 #section-service .service-item .line {
   max-width: 50%;
@@ -10708,7 +10745,7 @@ section#main-banner .wrapper-title-banner {
 }
 
 #section-blogs {
-  padding-bottom: 75px;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   #section-blogs {
@@ -11974,7 +12011,7 @@ section#main-banner .wrapper-title-banner {
   text-transform: uppercase;
 }
 #section-table-recruit .wrapper-table table thead th:first-child {
-  border-left: 1px solid transparent;
+  border-left: 0px solid transparent;
 }
 @media (min-width: 768px) {
   #section-table-recruit .wrapper-table table thead th {
@@ -11992,14 +12029,14 @@ section#main-banner .wrapper-title-banner {
 }
 #section-table-recruit .wrapper-table table tbody tr td {
   vertical-align: middle;
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-top: 0px solid transparent;
   padding: 15px;
   border-left: 1px solid #f57e20;
   color: #6b6c6c;
 }
 #section-table-recruit .wrapper-table table tbody tr td:first-child {
-  border-left: 1px solid transparent;
+  border-left: 0px solid transparent;
 }
 
 #page-contact #contact-main-banner {
