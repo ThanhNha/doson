@@ -23,15 +23,22 @@
         .item-icon {
           border-radius: 100%;
           overflow: hidden;
-          width: 100px;
-          height: 100px;
+          width: 70px;
+          height: 70px;
+          @include desktop {
+            width: 100px;
+            height: 100px;
+          }
           background-color: $color-red-500;
           display: flex;
           align-items: center;
           justify-content: center;
           .icon {
             i {
-              font-size: 50px;
+              font-size: 40px;
+              @include desktop {
+                font-size: 50px;
+              }
               color: $white;
             }
           }

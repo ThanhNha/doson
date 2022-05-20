@@ -60,6 +60,7 @@ main {
       justify-content: flex-end;
       align-items: flex-end;
       max-width: 400px;
+
       .divider {
         background: $color-red-400;
         height: 4px;
@@ -95,22 +96,20 @@ main {
   .section-title {
     display: flex;
     span {
-      margin-left: 0px;
       display: inline-block;
       color: $white;
       padding: 10px 15px;
       border-radius: 20px;
       background: $color-red-300;
-      margin-top: 20px;
-      @include tablet {
-        margin-left: 20px;
-        margin-top: 0;
-      }
+
+      margin-left: 20px;
     }
     .title {
       display: flex;
       flex-direction: column;
       max-width: 400px;
+      align-items: flex-end;
+      padding-top: 20px;
       .divider {
         background: $color-red-400;
         height: 4px;
@@ -135,11 +134,6 @@ main {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    flex-direction: column;
-
-    @include tablet {
-      flex-direction: row;
-    }
   }
 }
 .slick-dots {
