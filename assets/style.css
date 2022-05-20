@@ -8907,7 +8907,7 @@ html {
   height: 0;
   width: 100%;
   background: #eb3424;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 }
@@ -10964,7 +10964,6 @@ section#main-banner .wrapper-title-banner {
 
 #section-banner-vision {
   position: relative;
-  min-height: 350px;
 }
 @media (min-width: 768px) {
   #section-banner-vision {
@@ -10981,6 +10980,19 @@ section#main-banner .wrapper-title-banner {
     min-height: 900px;
   }
 }
+#section-banner-vision .bg-video-mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  #section-banner-vision .bg-video-mobile {
+    display: none;
+  }
+}
+#section-banner-vision .bg-video-mobile video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 #section-banner-vision .bg-video {
   position: absolute;
   top: 0;
@@ -10988,6 +11000,12 @@ section#main-banner .wrapper-title-banner {
   right: 0;
   width: 100%;
   height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-banner-vision .bg-video {
+    display: block;
+  }
 }
 #section-banner-vision .bg-video video {
   width: 100%;

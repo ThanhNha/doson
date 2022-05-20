@@ -1,6 +1,6 @@
 #section-banner-vision {
   position: relative;
-  min-height: 350px;
+  // min-height: 350px;
   @include tablet {
     min-height: 80vh;
   }
@@ -10,6 +10,20 @@
   @include large-desktop {
     min-height: 900px;
   }
+  .bg-video-mobile {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    display: block;
+    @include tablet {
+      display: none;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
   .bg-video {
     position: absolute;
     top: 0;
@@ -17,6 +31,10 @@
     right: 0;
     width: 100%;
     height: 100%;
+    display: none;
+    @include tablet {
+      display: block;
+    }
     video {
       width: 100%;
       height: 100%;
