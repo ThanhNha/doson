@@ -49,7 +49,7 @@ main {
       padding: 10px 15px;
       border-radius: 20px;
       background: $color-red-300;
-      margin-top: 20px;
+
       @include tablet {
         margin-top: 0;
       }
@@ -58,9 +58,11 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: flex-end;
       max-width: 400px;
-      padding-top: 22px;
+      @include tablet {
+        align-items: flex-end;
+        padding-top: 22px;
+      }
 
       .divider {
         background: $color-red-400;
@@ -109,7 +111,9 @@ main {
       display: flex;
       flex-direction: column;
       max-width: 400px;
-      align-items: flex-end;
+      @include tablet {
+        align-items: flex-end;
+      }
       padding-top: 20px;
       .divider {
         background: $color-red-400;
