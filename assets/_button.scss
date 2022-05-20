@@ -110,11 +110,13 @@
     // border-radius: 100% 0 0 100%/100% 30% 70% 0;
   }
   &:hover {
-    &::before {
-      // right: 0;
-      height: 250px;
-      width: 250%;
-      background: $color-red-500;
+    @include desktop {
+      &::before {
+        // right: 0;
+        height: 250px;
+        width: 250%;
+        background: $color-red-500;
+      }
     }
   }
 }

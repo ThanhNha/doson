@@ -8911,10 +8911,12 @@ html {
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
 }
-.hover-menu:hover::before {
-  height: 250px;
-  width: 250%;
-  background: #eb3424;
+@media (min-width: 992px) {
+  .hover-menu:hover::before {
+    height: 250px;
+    width: 250%;
+    background: #eb3424;
+  }
 }
 
 .font-regular {
@@ -10050,9 +10052,11 @@ main {
 .footer .footer-logo {
   max-width: 100px;
   max-height: 100px;
+  margin-top: 40px;
 }
 @media (min-width: 768px) {
   .footer .footer-logo {
+    margin-top: 0px;
     max-width: 120px;
     max-height: 120px;
   }
@@ -10437,13 +10441,13 @@ section#main-banner .wrapper-title-banner {
 #section-welcome .wrapper-title-banner .section-title .sub-title {
   color: #b35f27;
   font-size: 24px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
   font-style: italic;
   font-weight: bold;
   line-height: 120% !important;
   padding-top: 0px;
 }
-@media (min-width: 480px) {
+@media (min-width: 400px) {
   #section-welcome .wrapper-title-banner .section-title .sub-title {
     padding-bottom: 200px;
   }
