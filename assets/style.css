@@ -10964,9 +10964,22 @@ section#main-banner .wrapper-title-banner {
 
 #section-banner-vision {
   position: relative;
-  height: 100vh;
-  width: 100%;
-  padding-top: 180px;
+  min-height: 350px;
+}
+@media (min-width: 768px) {
+  #section-banner-vision {
+    min-height: 80vh;
+  }
+}
+@media (min-width: 992px) {
+  #section-banner-vision {
+    min-height: 850px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-banner-vision {
+    min-height: 900px;
+  }
 }
 #section-banner-vision .bg-video {
   position: absolute;

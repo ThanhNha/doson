@@ -1,8 +1,15 @@
 #section-banner-vision {
   position: relative;
-  height: 100vh;
-  width: 100%;
-  padding-top: 180px;
+  min-height: 350px;
+  @include tablet {
+    min-height: 80vh;
+  }
+  @include desktop {
+    min-height: 850px;
+  }
+  @include large-desktop {
+    min-height: 900px;
+  }
   .bg-video {
     position: absolute;
     top: 0;
