@@ -169,3 +169,8 @@ function header() {
   });
 }
 header();
+
+// let menuHover = $(".hover-menu");
+// menuHover.mouseout(function () {
+//   menuHover.css("transform: translate(0px, -76%);");
+// });

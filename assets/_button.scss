@@ -90,3 +90,31 @@
   position: relative;
   pointer-events: none;
 }
+
+.hover-menu {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -200%;
+    z-index: -1;
+    height: 0;
+    width: 100%;
+    background: $color-red-500;
+    transition: all 2s ease;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    // border-radius: 100% 0 0 100%/100% 30% 70% 0;
+  }
+  &:hover {
+    &::before {
+      // right: 0;
+      height: 250px;
+      width: 250%;
+      background: $color-red-500;
+    }
+  }
+}

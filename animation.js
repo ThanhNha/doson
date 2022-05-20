@@ -115,6 +115,96 @@ function fadeInUpInit() {
 
 fadeInUpInit();
 
+gsap.utils.toArray(".fade-anim").forEach((panel, i) => {
+  const fadeAnim = gsap.to(panel, {
+    opacity: 1,
+    duration: 1,
+  });
+  ScrollTrigger.create({
+    animation: fadeAnim,
+    trigger: panel,
+    start: "top 75%",
+    end: "bottom 75%",
+    markers: false,
+    toggleActions: "play none none none",
+  });
+});
+
+var optionImgFirst = {
+  top: "5%",
+  duration: 1.5,
+  delay: 1,
+};
+var optionImgSecond = {
+  left: "20%",
+  duration: 1.5,
+  delay: 1,
+};
+var optionImgThird = {
+  bottom: "20%",
+  duration: 1.5,
+  delay: 1,
+};
+
+if ($(window).width() < 767) {
+  optionImgFirst.yPercent = 100;
+  optionImgThird.bottom = "13%";
+  optionImgSecond.left = "33%";
+}
+
+gsap.utils.toArray(".img-combo-anim").forEach((panel, i) => {
+  if ($(panel).find(".img-1").length) {
+    var img_first = $(panel).children(".img-1");
+    var img_second = $(panel).children(".img-2");
+    var img_third = $(panel).children(".img-3");
+    console.log(panel);
+
+    ScrollTrigger.create({
+      trigger: panel,
+      start: "top 75%",
+      end: "bottom 75%",
+      toggleActions: "play none none none",
+      markers: false,
+      onEnter: () => {
+        gsap.to(img_first, optionImgFirst);
+        gsap.to(img_second, optionImgSecond);
+        gsap.to(img_third, optionImgThird);
+      },
+    });
+  }
+});
+
+const items__left = gsap.utils.toArray(".fade-left");
+
+items__left.forEach((item__left, i) => {
+  const anim = gsap.fromTo(
+    item__left,
+    { autoAlpha: 0, x: -50 },
+    { duration: 1, autoAlpha: 1, x: 0 }
+  );
+  ScrollTrigger.create({
+    trigger: item__left,
+    animation: anim,
+    toggleActions: "play none reverse none",
+    once: true,
+  });
+});
+
+const items__right = gsap.utils.toArray(".fade-right");
+
+items__right.forEach((item__right, i) => {
+  const anim = gsap.fromTo(
+    item__right,
+    { autoAlpha: 0, x: 50, opacity: 0 },
+    { duration: 1, autoAlpha: 1, x: 0, opacity: 1 }
+  );
+  ScrollTrigger.create({
+    trigger: item__right,
+    animation: anim,
+    toggleActions: "play none reverse none",
+    once: true,
+  });
+});
 // CURSOR
 // var cursor = $(".cursor"),
 //   follower = $(".cursor-follower");
