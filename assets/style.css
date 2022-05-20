@@ -9111,6 +9111,7 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   max-width: 400px;
+  padding-top: 22px;
 }
 .wrapper-title-service .section-title .title .divider {
   background: #f57e20;
@@ -11999,44 +12000,44 @@ section#main-banner .wrapper-title-banner {
   }
 }
 
-#section-banner-news {
+#page-news #section-banner-news {
   position: relative;
   min-height: 300px;
 }
 @media (min-width: 768px) {
-  #section-banner-news {
+  #page-news #section-banner-news {
     min-height: 80vh;
   }
 }
 @media (min-width: 992px) {
-  #section-banner-news {
+  #page-news #section-banner-news {
     min-height: 650px;
   }
 }
-#section-banner-news .banner-img {
+#page-news #section-banner-news .banner-img {
   position: absolute;
   bottom: 2%;
   left: 2%;
   display: none;
 }
 @media (min-width: 768px) {
-  #section-banner-news .banner-img {
+  #page-news #section-banner-news .banner-img {
     display: block;
   }
 }
 @media (min-width: 1200px) {
-  #section-banner-news .banner-img {
+  #page-news #section-banner-news .banner-img {
     display: block;
     bottom: 10%;
     left: 10%;
   }
 }
-#section-banner-news .banner-img img {
+#page-news #section-banner-news .banner-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-#section-banner-news .banner-news {
+#page-news #section-banner-news .banner-news {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -12046,7 +12047,7 @@ section#main-banner .wrapper-title-banner {
   bottom: 0;
   z-index: -1;
 }
-#section-banner-news .banner-news video {
+#page-news #section-banner-news .banner-news video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -12072,6 +12073,9 @@ section#main-banner .wrapper-title-banner {
   flex-direction: column;
 }
 
+#page-news .wrapper-title {
+  max-width: 100%;
+}
 #page-news .section-news-1 {
   padding-top: 25px;
   margin-bottom: 20px;
@@ -12107,6 +12111,30 @@ section#main-banner .wrapper-title-banner {
   border: none;
 }
 
+#page-recruit .text-banner {
+  position: absolute;
+  width: 50%;
+  left: 5%;
+  top: 60%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #page-recruit .text-banner {
+    display: block;
+  }
+}
+#page-recruit .text-banner .combined {
+  -webkit-text-stroke: 1px red;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 70px;
+}
+@media (min-width: 768px) {
+  #page-recruit .text-banner .combined {
+    font-size: 110px;
+  }
+}
 #page-recruit #recruit-main-banner {
   position: relative;
   min-height: 350px;
@@ -12126,6 +12154,19 @@ section#main-banner .wrapper-title-banner {
     min-height: 900px;
   }
 }
+#page-recruit #recruit-main-banner .bg-video-mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  #page-recruit #recruit-main-banner .bg-video-mobile {
+    display: none;
+  }
+}
+#page-recruit #recruit-main-banner .bg-video-mobile video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 #page-recruit #recruit-main-banner .bg-video {
   position: absolute;
   top: 0;
@@ -12133,6 +12174,12 @@ section#main-banner .wrapper-title-banner {
   right: 0;
   width: 100%;
   height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #page-recruit #recruit-main-banner .bg-video {
+    display: block;
+  }
 }
 #page-recruit #recruit-main-banner .bg-video video {
   width: 100%;
@@ -12313,7 +12360,8 @@ section#main-banner .wrapper-title-banner {
 }
 @media (min-width: 992px) {
   #page-contact #contact-main-banner {
-    min-height: 650px;
+    max-height: 650px;
+    min-height: 100vh;
   }
 }
 #page-contact #contact-main-banner .banner-contact {
@@ -12453,7 +12501,7 @@ section#main-banner .wrapper-title-banner {
 }
 #page-contact #section-contact .wrapper-form-contact .form-contact .form-control {
   padding: 15px 20px;
-  background-color: #fdc066;
+  border: 1px solid #f57e20 !important;
   color: #6b6c6c;
   border-radius: 20px;
   border: 1px solid transparent;

@@ -6,7 +6,8 @@
       min-height: 80vh;
     }
     @include desktop {
-      min-height: 650px;
+      max-height: 650px;
+      min-height: 100vh;
     }
     .banner-contact {
       position: absolute;

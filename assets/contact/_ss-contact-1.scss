@@ -98,7 +98,8 @@
         }
         .form-control {
           padding: 15px 20px;
-          background-color: $color-red-300;
+          // background-color: $color-red-300;
+          border: 1px solid $color-red-400 !important;
           color: $color-gray-500;
           border-radius: 20px;
           border: 1px solid transparent;
