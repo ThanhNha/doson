@@ -1,5 +1,4 @@
 //main button
-
 .main-btn {
   display: inline-block;
   padding: 7px 15px;
@@ -29,34 +28,34 @@
     color: $white;
   }
 }
-.main-btn.border {
-  background: transparent !important;
-  color: $color-red-500;
-  border: 1px solid $color-red-500 !important;
-  &:focus {
-    box-shadow: none;
-  }
-  @include transition;
-  &:hover {
-    background: $color-red-400;
-    color: $white;
-  }
-}
-.main-btn::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  right: 0;
-  background: $navi;
-  z-index: -1;
-  transition: 0.3s linear;
-}
-.main-btn:hover::before {
-  height: 100%;
-  top: 0;
-}
+// .main-btn.border {
+//   background: transparent !important;
+//   color: $color-red-500;
+//   border: 1px solid $color-red-500 !important;
+//   &:focus {
+//     box-shadow: none;
+//   }
+//   @include transition;
+//   &:hover {
+//     background: $color-red-400;
+//     color: $white;
+//   }
+// }
+// .main-btn::before {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 0;
+//   bottom: 0;
+//   right: 0;
+//   background: $navi;
+//   z-index: -1;
+//   transition: 0.3s linear;
+// }
+// .main-btn:hover::before {
+//   height: 100%;
+//   top: 0;
+// }
 .btn__form {
   background: $color-red-400;
   border-radius: 15px;
@@ -118,5 +117,68 @@
         background: $color-red-500;
       }
     }
+  }
+}
+
+//btn animation
+.btn-click {
+  cursor: pointer;
+  border: 0;
+  // color: red;
+  background: transparent;
+  border-radius: 15px;
+  min-width: 1em;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  will-change: transform;
+  outline: 0;
+  transform: translateZ(0) rotate(0.001deg);
+}
+.btn-fill {
+  background: $color-red-500;
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  border-radius: 50%;
+  top: -50%;
+  left: -25%;
+  transform: translate3d(0, -76%, 0);
+  will-change: transform;
+  transition: background-color ease-in-out 0.25s;
+}
+.btn-red {
+  .btn-fill {
+    background: $color-red-400;
+  }
+}
+.btn-outline-red .btn-click {
+  border: 1px solid $color-red-500;
+}
+//btn-not-background
+.btn-outline-red .btn-click {
+  border: 1px solid $color-red-500;
+}
+
+.btn-outline-red .btn-click {
+  .btn-text .btn-text-inner {
+    font-weight: bold;
+    color: $color-red-500;
+  }
+}
+//btn-background-red
+.btn-red .btn-click {
+  background: $color-red-500;
+}
+.btn-red .btn-click {
+  .btn-text .btn-text-inner {
+    font-weight: bold;
+    color: $white;
   }
 }

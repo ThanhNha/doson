@@ -8819,41 +8819,6 @@ html {
   color: #fff;
 }
 
-.main-btn.border {
-  background: transparent !important;
-  color: #eb3424;
-  border: 1px solid #eb3424 !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.main-btn.border:focus {
-  box-shadow: none;
-}
-.main-btn.border:hover {
-  background: #f57e20;
-  color: #fff;
-}
-
-.main-btn::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0;
-  bottom: 0;
-  right: 0;
-  background: #083050;
-  z-index: -1;
-  transition: 0.3s linear;
-}
-
-.main-btn:hover::before {
-  height: 100%;
-  top: 0;
-}
-
 .btn__form {
   background: #f57e20;
   border-radius: 15px;
@@ -8917,6 +8882,65 @@ html {
     width: 250%;
     background: #eb3424;
   }
+}
+
+.btn-click {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-radius: 15px;
+  min-width: 1em;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 1em;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  will-change: transform;
+  outline: 0;
+  transform: translateZ(0) rotate(0.001deg);
+}
+
+.btn-fill {
+  background: #eb3424;
+  position: absolute;
+  width: 150%;
+  height: 200%;
+  border-radius: 50%;
+  top: -50%;
+  left: -25%;
+  transform: translate3d(0, -76%, 0);
+  will-change: transform;
+  transition: background-color ease-in-out 0.25s;
+}
+
+.btn-red .btn-fill {
+  background: #f57e20;
+}
+
+.btn-outline-red .btn-click {
+  border: 1px solid #eb3424;
+}
+
+.btn-outline-red .btn-click {
+  border: 1px solid #eb3424;
+}
+
+.btn-outline-red .btn-click .btn-text .btn-text-inner {
+  font-weight: bold;
+  color: #eb3424;
+}
+
+.btn-red .btn-click {
+  background: #eb3424;
+}
+
+.btn-red .btn-click .btn-text .btn-text-inner {
+  font-weight: bold;
+  color: #fff;
 }
 
 .font-regular {
@@ -9723,10 +9747,6 @@ main {
     color: #fff;
   }
 }
-#header .dropdown.show .nav-link::before {
-  transform: rotate(180deg);
-  top: 10px;
-}
 #header .header-top-bar {
   background: #f57e20;
   font-size: 14px;
@@ -9761,7 +9781,7 @@ main {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 #header #navbar .nav-link {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 #header #navbar .nav-item.active .nav-link {
   color: #eb3424;
@@ -9769,7 +9789,7 @@ main {
 @media (min-width: 992px) {
   #header #navbar .nav-item.active .nav-link {
     background: #eb3424;
-    border-radius: 20px;
+    border-radius: 15px;
     color: #fff;
   }
 }
@@ -9800,22 +9820,6 @@ main {
 #header .nav-item.dropdown .nav-link {
   position: relative;
   padding-right: 25px !important;
-}
-#header .nav-item.dropdown .nav-link:before {
-  position: absolute;
-  right: 0;
-  top: 12px;
-  content: "\eac8";
-  font-family: "icofont" !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-#header .nav-item.dropdown:hover .nav-link::before {
-  transform: rotate(180deg);
-  top: 10px;
 }
 #header .dropdown-menu {
   visibility: hidden;
@@ -10450,6 +10454,7 @@ section#main-banner .wrapper-title-banner {
   color: #b35f27;
   font-size: 24px;
   padding-bottom: 140px;
+  transition: all 0.2s ease-in-out;
   font-style: italic;
   font-weight: bold;
   line-height: 120% !important;
@@ -11458,6 +11463,10 @@ section#main-banner .wrapper-title-banner {
   max-width: 410px;
   max-height: 410px;
 }
+#section-mkt .wrapper-main-service .service-1 {
+  z-index: 3;
+  position: relative;
+}
 #section-mkt .wrapper-main-service .service-1 .service-icon {
   max-width: 250px;
   position: relative;
@@ -11471,6 +11480,10 @@ section#main-banner .wrapper-title-banner {
   #section-mkt .wrapper-main-service .service-1 .service-icon::before {
     font-size: 70px;
   }
+}
+#section-mkt .wrapper-main-service .service-2 {
+  z-index: 2;
+  position: relative;
 }
 #section-mkt .wrapper-main-service .service-2 .service-icon {
   position: relative;

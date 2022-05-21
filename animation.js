@@ -23,15 +23,16 @@ sections.forEach(function (section) {
     opacity: 0,
     xPercent: 10,
     duration: 0.6,
-    ease: "power0",
+    ease: "power2.in",
+    // overwrite: "auto",
   });
   textTimeline.from(
     text1,
     {
       opacity: 0,
       xPercent: -10,
-      duration: 0.8,
-      ease: "power0",
+      duration: 2,
+      ease: "power3.in",
     },
     "-=1"
   );
@@ -91,24 +92,6 @@ function fadeInUpInit() {
           opacity: 1,
           stagger: 0.7,
         }),
-      // onLeave: () =>
-      //   gsap.to(elems, {
-      //     y: -50,
-      //     opacity: 0,
-      //     stagger: 0.5,
-      //   }),
-      // onEnterBack: () =>
-      //   gsap.to(elems, {
-      //     y: 0,
-      //     opacity: 1,
-      //     stagger: -0.5,
-      //   }),
-      // onLeaveBack: () =>
-      //   gsap.to(elems, {
-      //     y: 50,
-      //     opacity: 0,
-      //     stagger: -0.5,
-      //   }),
     });
   });
 }
@@ -157,7 +140,7 @@ gsap.utils.toArray(".img-combo-anim").forEach((panel, i) => {
     var img_first = $(panel).children(".img-1");
     var img_second = $(panel).children(".img-2");
     var img_third = $(panel).children(".img-3");
-    console.log(panel);
+    // console.log(panel);
 
     ScrollTrigger.create({
       trigger: panel,
@@ -205,6 +188,7 @@ items__right.forEach((item__right, i) => {
     once: true,
   });
 });
+
 // CURSOR
 // var cursor = $(".cursor"),
 //   follower = $(".cursor-follower");

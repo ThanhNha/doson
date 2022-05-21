@@ -1,12 +1,3 @@
-// wow = new WOW({
-//   boxClass: "shin",
-//   animateClass: "animated", // default
-//   offset: 0, // default
-//   mobile: true, // default
-//   live: true, // default
-// });
-// wow.init();
-
 /**
  * Magnetic Buttons
  */
@@ -69,11 +60,18 @@ function initMagneticButtons() {
     }
     if ($(this).find(".btn-text-inner.change").length) {
       gsap.to($(this).find(".btn-text-inner.change"), 0.3, {
-        startAt: { color: "#1C1D20" },
+        startAt: { color: "#eb3424" },
         color: "#FFFFFF",
         ease: Power3.easeIn,
       });
     }
+    // if ($(this).find(".btn-text-inner.change").length) {
+    //   gsap.to($(this).find(".btn-text-inner.change"), 0.3, {
+    //     startAt: { color: "#1C1D20" },
+    //     color: "#FFFFFF",
+    //     ease: Power3.easeIn,
+    //   });
+    // }
     $(this.parentNode).removeClass("not-active");
   });
 
@@ -87,7 +85,7 @@ function initMagneticButtons() {
     }
     if ($(this).find(".btn-text-inner.change").length) {
       gsap.to($(this).find(".btn-text-inner.change"), 0.3, {
-        color: "#1C1D20",
+        color: "#eb3424",
         ease: Power3.easeOut,
         delay: 0.3,
       });
@@ -97,29 +95,29 @@ function initMagneticButtons() {
 }
 
 initMagneticButtons();
-// if (window.innerWidth > 991) {
-//   var magnets = document.querySelectorAll(".magnetic");
-//   var strength = 30;
+if (window.innerWidth > 991) {
+  var magnets = document.querySelectorAll(".magnetic");
+  var strength = 30;
 
-//   magnets.forEach((magnet) => {
-//     magnet.addEventListener("mousemove", moveMagnet);
-//     magnet.addEventListener("mouseout", function (event) {
-//       TweenMax.to(event.currentTarget, 1, { x: 0, y: 0, ease: Power4.easeOut });
-//     });
-//   });
+  magnets.forEach((magnet) => {
+    magnet.addEventListener("mousemove", moveMagnet);
+    magnet.addEventListener("mouseout", function (event) {
+      TweenMax.to(event.currentTarget, 1, { x: 0, y: 0, ease: Power4.easeOut });
+    });
+  });
 
-//   function moveMagnet(event) {
-//     var magnetButton = event.currentTarget;
-//     var bounding = magnetButton.getBoundingClientRect();
+  function moveMagnet(event) {
+    var magnetButton = event.currentTarget;
+    var bounding = magnetButton.getBoundingClientRect();
 
-//     // console.log(magnetButton, bounding);
+    // console.log(magnetButton, bounding);
 
-//     TweenMax.to(magnetButton, 1, {
-//       x: ((event.clientX - bounding.left) / magnetButton.offsetWidth - 0.5) * strength,
-//       y: ((event.clientY - bounding.top) / magnetButton.offsetHeight - 0.5) * strength,
-//       ease: Power4.easeOut,
-//     });
+    TweenMax.to(magnetButton, 1, {
+      x: ((event.clientX - bounding.left) / magnetButton.offsetWidth - 0.5) * strength,
+      y: ((event.clientY - bounding.top) / magnetButton.offsetHeight - 0.5) * strength,
+      ease: Power4.easeOut,
+    });
 
-//     // magnetButton.style.transform = 'translate(' + (((( event.clientX - bounding.left)/(magnetButton.offsetWidth))) - 0.5) * strength + 'px,'+ (((( event.clientY - bounding.top)/(magnetButton.offsetHeight))) - 0.5) * strength + 'px)';
-//   }
-// }
+    // magnetButton.style.transform = 'translate(' + (((( event.clientX - bounding.left)/(magnetButton.offsetWidth))) - 0.5) * strength + 'px,'+ (((( event.clientY - bounding.top)/(magnetButton.offsetHeight))) - 0.5) * strength + 'px)';
+  }
+}
