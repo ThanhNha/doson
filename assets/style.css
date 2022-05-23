@@ -9703,33 +9703,39 @@ main {
   #header .dropdown .dropdown-menu {
     position: absolute;
     display: block;
-    background: #fff;
+    background: #eb3424;
     min-width: 240px;
-    top: 130%;
+    top: 100%;
     left: 25px;
     opacity: 0;
     padding: 0px;
     visibility: hidden;
     transition: all 0.3s ease-out 0s;
     border: 0px;
-    border-top: 5px solid #eb3424;
-    border-radius: 0px;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   #header .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    top: 115%;
+    top: 100%;
   }
 }
 #header .dropdown .dropdown-item {
-  padding: 13px 20px;
-  border-bottom: 1px solid #eb3424;
+  padding: 15px 20px;
   background: transparent;
   font-weight: 400;
-  color: #555;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #header .dropdown .dropdown-item:hover {
   color: #eb3424;
+  background: #fff;
 }
 @media (max-width: 991px) {
   #header .dropdown .dropdown-menu.show {
