@@ -23,6 +23,7 @@ body {
   -webkit-font-smoothing: auto !important;
   -moz-osx-font-smoothing: grayscale !important;
   font-display: auto !important;
+  overflow-x: hidden;
 }
 
 ul {
@@ -9705,7 +9706,7 @@ main {
     display: block;
     background: #eb3424;
     min-width: 240px;
-    top: 100%;
+    top: calc(100% + 5px);
     left: 25px;
     opacity: 0;
     padding: 0px;
@@ -9719,7 +9720,7 @@ main {
   #header .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    top: 100%;
+    top: calc(100% + 5px);
   }
 }
 #header .dropdown .dropdown-item {
@@ -10217,8 +10218,22 @@ main {
 
 .subscribe {
   position: relative;
+  position: relative;
 }
 .subscribe .form-control {
+  border-radius: 50px;
+  height: 60px;
+  padding-left: 25px;
+  border-color: #eee;
+}
+.subscribe fieldset {
+  padding: 0 !important;
+}
+.subscribe .form-field {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.subscribe #field_7mtbl {
   border-radius: 50px;
   height: 60px;
   padding-left: 25px;
@@ -11111,8 +11126,20 @@ section#main-banner .wrapper-title-banner {
   height: 100%;
   object-fit: cover;
 }
+@media (min-width: 992px) {
+  #section-vision .video-animation-wrapper video {
+    width: 80%;
+  }
+}
 #section-vision .chart-wrapper .chart-img {
   margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  #section-vision .chart-wrapper .chart-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #section-vision .chart-wrapper .chart-img img {
   max-height: 500px;
@@ -11250,7 +11277,7 @@ section#main-banner .wrapper-title-banner {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  max-width: 450px;
+  max-width: 480px;
   margin: 0 auto;
   overflow: hidden;
 }

@@ -168,7 +168,7 @@
         display: block;
         background: $color-red-500;
         min-width: 240px;
-        top: 100%;
+        top: calc(100% + 5px);
         left: 25px;
         opacity: 0;
         padding: 0px;
@@ -183,7 +183,7 @@
       &:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;
-        top: 100%;
+        top: calc(100% + 5px);
       }
     }
     //

@@ -205,6 +205,20 @@
     padding-left: 25px;
     border-color: #eee;
   }
+  position: relative;
+  fieldset {
+    padding: 0 !important;
+  }
+  .form-field {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #field_7mtbl {
+    border-radius: 50px;
+    height: 60px;
+    padding-left: 25px;
+    border-color: #eee;
+  }
   .btn {
     position: absolute;
     right: -1px;
