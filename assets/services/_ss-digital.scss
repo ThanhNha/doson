@@ -64,6 +64,11 @@
     display: flex;
     background: $white;
     flex-direction: column;
+    color: $color-gray-500;
+    @include transition;
+    &:hover {
+      color: $color-red-400;
+    }
     // height: 100%;
     @include transition;
     max-width: 100%;

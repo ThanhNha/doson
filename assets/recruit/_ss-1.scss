@@ -1,25 +1,4 @@
 #page-recruit {
-  .text-banner {
-    position: absolute;
-    width: 50%;
-    left: 5%;
-    top: 50%;
-    display: none;
-    @include tablet {
-      display: block;
-    }
-    .combined {
-      -webkit-text-stroke: 1px red;
-      color: transparent;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 70px;
-      @include tablet {
-        font-size: 110px;
-      }
-    }
-  }
-
   #recruit-main-banner {
     position: relative;
     min-height: 350px;
@@ -78,6 +57,26 @@
       img {
         width: 100%;
         object-fit: contain;
+      }
+    }
+    .text-banner {
+      position: absolute;
+      width: 50%;
+      left: 5%;
+      top: 50%;
+      display: none;
+      @include tablet {
+        display: block;
+      }
+      .combined {
+        -webkit-text-stroke: 1px red;
+        color: transparent;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 70px;
+        @include tablet {
+          font-size: 110px;
+        }
       }
     }
   }
