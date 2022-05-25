@@ -51,7 +51,8 @@
     position: relative;
     @include desktop {
       min-height: 500px;
-
+      display: flex;
+      align-items: end;
       width: 60%;
       position: absolute;
     }

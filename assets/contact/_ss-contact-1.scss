@@ -44,7 +44,7 @@
           }
         }
         .line {
-          height: 1px;
+          height: 3px;
           width: 150px;
           background-color: $color-red-500;
         }
@@ -99,14 +99,14 @@
         .form-control {
           padding: 15px 20px;
           // background-color: $color-red-300;
-          border: 1px solid $color-red-400 !important;
+          border: 1.5px solid $color-red-400 !important;
           color: $color-gray-500;
           border-radius: 20px;
           border: 1px solid transparent;
           @include transition;
           &:focus {
             background-color: transparent !important;
-            border: 1px solid $color-red-400 !important;
+            border: 1.5px solid $color-red-400 !important;
             box-shadow: none;
           }
         }

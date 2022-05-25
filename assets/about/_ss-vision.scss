@@ -51,13 +51,16 @@
   .chart-wrapper {
     .chart-img {
       margin-bottom: 50px;
-      @include desktop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       img {
-        max-height: 500px;
+        @include desktop {
+          max-height: 500px;
+          width: max-content;
+        }
+        // width: 100%;
         object-fit: cover;
       }
     }

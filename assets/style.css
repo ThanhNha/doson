@@ -11133,17 +11133,18 @@ section#main-banner .wrapper-title-banner {
 }
 #section-vision .chart-wrapper .chart-img {
   margin-bottom: 50px;
-}
-@media (min-width: 992px) {
-  #section-vision .chart-wrapper .chart-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #section-vision .chart-wrapper .chart-img img {
-  max-height: 500px;
   object-fit: cover;
+}
+@media (min-width: 992px) {
+  #section-vision .chart-wrapper .chart-img img {
+    max-height: 500px;
+    width: max-content;
+  }
 }
 #section-vision .text-vision p {
   color: #fdc066;
@@ -11303,6 +11304,127 @@ section#main-banner .wrapper-title-banner {
   fill: #fed8a8;
 }
 
+#section-aboutAnimation {
+  position: relative;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation {
+    min-height: 400px;
+    width: 100%;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  #section-aboutAnimation .wrapper-aboutAnimation {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-center {
+  position: relative;
+}
+#section-aboutAnimation .wrapper-aboutAnimation-center .info-text {
+  text-align: center;
+  z-index: 1;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-center .info-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 320px;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-center .info-text strong {
+  display: none;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-center .info-text strong {
+    display: block;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-center .animation-center {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-center .animation-center {
+    width: max-content;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-center .animation-center strong {
+  z-index: 1;
+  position: absolute;
+  max-width: 300px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-center .animation-center strong {
+    display: none;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-center .animation-center img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#section-aboutAnimation .wrapper-aboutAnimation-left {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-left {
+    display: block;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-right {
+  position: relative;
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-right {
+    display: block;
+  }
+}
+#section-aboutAnimation .wrapper-aboutAnimation-right span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  color: #6b6c6c;
+}
+
 #section-bannerService {
   min-height: 500px;
   background: linear-gradient(to left, #f57121, #fdbf66);
@@ -11364,6 +11486,8 @@ section#main-banner .wrapper-title-banner {
 @media (min-width: 992px) {
   #section-bannerService .wrapper-banner {
     min-height: 500px;
+    display: flex;
+    align-items: end;
     width: 60%;
     position: absolute;
   }
@@ -12478,7 +12602,7 @@ section#main-banner .wrapper-title-banner {
   }
 }
 #page-contact #section-contact .wrapper-items-contact .contact-item .line {
-  height: 1px;
+  height: 3px;
   width: 150px;
   background-color: #eb3424;
 }
@@ -12542,7 +12666,7 @@ section#main-banner .wrapper-title-banner {
 }
 #page-contact #section-contact .wrapper-form-contact .form-contact .form-control {
   padding: 15px 20px;
-  border: 1px solid #f57e20 !important;
+  border: 1.5px solid #f57e20 !important;
   color: #6b6c6c;
   border-radius: 20px;
   border: 1px solid transparent;
@@ -12554,7 +12678,7 @@ section#main-banner .wrapper-title-banner {
 }
 #page-contact #section-contact .wrapper-form-contact .form-contact .form-control:focus {
   background-color: transparent !important;
-  border: 1px solid #f57e20 !important;
+  border: 1.5px solid #f57e20 !important;
   box-shadow: none;
 }
 #page-contact #section-contact .wrapper-form-contact .form-contact textarea {
