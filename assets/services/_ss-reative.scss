@@ -4,6 +4,14 @@
     padding: 40px 0px;
   }
   position: relative;
+  .wrapper-title-service {
+    .body-text {
+      @include tablet {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
   .wrapper-reative {
     position: relative;
     height: auto;

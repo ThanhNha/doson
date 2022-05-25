@@ -24,6 +24,7 @@
     }
     &-center {
       position: relative;
+
       .info-text {
         text-align: center;
         z-index: 1;
@@ -31,7 +32,7 @@
         @include desktop {
           position: absolute;
           top: 50%;
-          left: 50%;
+          left: calc(50% - 50px);
           transform: translate(-50%, -50%);
           max-width: 320px;
         }
@@ -44,8 +45,10 @@
       }
       .animation-center {
         position: relative;
+
         @include desktop {
           width: max-content;
+          padding-right: 100px;
         }
         width: 100%;
         height: auto;
@@ -73,6 +76,7 @@
     &-left {
       @include desktop {
         display: block;
+        padding-left: 100px;
       }
       display: none;
       position: absolute;
@@ -94,9 +98,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
+
         text-align: center;
         font-weight: bold;
         color: $color-gray-500;
+        @include desktop {
+          line-height: 150% !important;
+        }
       }
     }
   }

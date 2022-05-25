@@ -44,6 +44,14 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .wrapper-title-service {
+    .body-text {
+      @include tablet {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
   .wrapper-main-service {
     position: relative;
     margin: 0 auto;

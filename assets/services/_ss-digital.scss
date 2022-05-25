@@ -38,6 +38,14 @@
   .custom-shape-divider-top-1652350317 .shape-fill {
     fill: #ffffff;
   }
+  .wrapper-title-service {
+    .body-text {
+      @include tablet {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
   .wrapper-service {
     margin-top: 20px;
 

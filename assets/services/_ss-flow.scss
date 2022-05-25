@@ -40,6 +40,14 @@
   .custom-shape-divider-top-1652425003 .shape-fill {
     fill: #ffffff;
   }
+  .wrapper-title-service {
+    .body-text {
+      @include tablet {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
   .wrapper-cards-flow {
     display: none;
     @include desktop {

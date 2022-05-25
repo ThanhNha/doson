@@ -35,6 +35,7 @@
   .wrapper-vision {
     max-width: 100%;
     @include desktop {
+      padding-top: 50px;
       max-width: 80%;
     }
   }

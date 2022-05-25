@@ -11118,6 +11118,7 @@ section#main-banner .wrapper-title-banner {
 }
 @media (min-width: 992px) {
   #section-vision .wrapper-vision {
+    padding-top: 50px;
     max-width: 80%;
   }
 }
@@ -11347,7 +11348,7 @@ section#main-banner .wrapper-title-banner {
   #section-aboutAnimation .wrapper-aboutAnimation-center .info-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: calc(50% - 50px);
     transform: translate(-50%, -50%);
     max-width: 320px;
   }
@@ -11368,6 +11369,7 @@ section#main-banner .wrapper-title-banner {
 @media (min-width: 992px) {
   #section-aboutAnimation .wrapper-aboutAnimation-center .animation-center {
     width: max-content;
+    padding-right: 100px;
   }
 }
 #section-aboutAnimation .wrapper-aboutAnimation-center .animation-center strong {
@@ -11400,6 +11402,7 @@ section#main-banner .wrapper-title-banner {
 @media (min-width: 992px) {
   #section-aboutAnimation .wrapper-aboutAnimation-left {
     display: block;
+    padding-left: 100px;
   }
 }
 #section-aboutAnimation .wrapper-aboutAnimation-right {
@@ -11423,6 +11426,11 @@ section#main-banner .wrapper-title-banner {
   text-align: center;
   font-weight: bold;
   color: #6b6c6c;
+}
+@media (min-width: 992px) {
+  #section-aboutAnimation .wrapper-aboutAnimation-right span {
+    line-height: 150% !important;
+  }
 }
 
 #section-bannerService {
@@ -11566,6 +11574,12 @@ section#main-banner .wrapper-title-banner {
   #section-mkt {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  #section-mkt .wrapper-title-service .body-text {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 #section-mkt .wrapper-main-service {
@@ -11741,6 +11755,12 @@ section#main-banner .wrapper-title-banner {
 #section-digital .custom-shape-divider-top-1652350317 .shape-fill {
   fill: #ffffff;
 }
+@media (min-width: 768px) {
+  #section-digital .wrapper-title-service .body-text {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
 #section-digital .wrapper-service {
   margin-top: 20px;
 }
@@ -11871,6 +11891,12 @@ section#main-banner .wrapper-title-banner {
 @media (min-width: 992px) {
   #section-reative {
     padding: 40px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #section-reative .wrapper-title-service .body-text {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 #section-reative .wrapper-reative {
@@ -12073,6 +12099,12 @@ section#main-banner .wrapper-title-banner {
 }
 #section-service-flow .custom-shape-divider-top-1652425003 .shape-fill {
   fill: #ffffff;
+}
+@media (min-width: 768px) {
+  #section-service-flow .wrapper-title-service .body-text {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
 #section-service-flow .wrapper-cards-flow {
   display: none;
