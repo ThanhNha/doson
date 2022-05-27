@@ -9026,7 +9026,7 @@ html {
   }
 
   .h3 {
-    font-size: 24px !important;
+    font-size: 36px !important;
     line-height: 120% !important;
   }
 
@@ -12300,27 +12300,52 @@ section#main-banner .wrapper-title-banner {
   flex-direction: column;
 }
 
-#page-news .wrapper-title {
-  max-width: 100%;
-}
-#page-news .section-news-1 {
-  margin-bottom: 20px;
+.wrapper-news-info {
+  padding-bottom: 25px;
 }
 @media (min-width: 768px) {
-  #page-news .section-news-1 {
-    padding-top: 30px;
+  .wrapper-news-info {
+    padding-bottom: 35px;
   }
 }
-#page-news .section-news-1 .card-news-horizontal:last-child .row {
+@media (min-width: 992px) {
+  .wrapper-news-info {
+    padding-bottom: 50px;
+  }
+}
+.wrapper-news-info .wrapper-load-more {
+  text-align: center;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .wrapper-news-info .wrapper-load-more {
+    padding-bottom: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper-news-info .wrapper-load-more {
+    padding-bottom: 0px;
+  }
+}
+.wrapper-news-info .wrapper-title {
+  max-width: 100%;
+}
+.wrapper-news-info .section-news {
+  margin-bottom: 20px;
+}
+.wrapper-news-info .section-news .wrapper-news.reverse .card-news-horizontal .row {
   flex-direction: row-reverse;
 }
-#page-news .section-news-1 .line {
+.wrapper-news-info .section-news .line {
   height: 1px;
   width: 100%;
   margin: 20px 0px;
   background-color: #6b6c6c;
 }
-#page-news .wrapper-bar {
+.wrapper-news-info .section-news .line:first-child {
+  display: none;
+}
+.wrapper-news-info .wrapper-bar {
   padding: 20px;
   border-radius: 15px;
   background-color: #e3e5e5;
@@ -12329,11 +12354,11 @@ section#main-banner .wrapper-title-banner {
   left: 0;
 }
 @media (min-width: 992px) {
-  #page-news .wrapper-bar {
+  .wrapper-news-info .wrapper-bar {
     border-radius: 30px;
   }
 }
-#page-news .wrapper-bar .card-news-hot .news-title {
+.wrapper-news-info .wrapper-bar .card-news-hot .news-title {
   border: none;
 }
 
@@ -12758,6 +12783,224 @@ section#main-banner .wrapper-title-banner {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#serviceDetail-banner {
+  overflow: hidden;
+}
+#serviceDetail-banner .wrapper-banner {
+  position: relative;
+  min-height: 400px;
+}
+@media (min-width: 768px) {
+  #serviceDetail-banner .wrapper-banner {
+    min-height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  #serviceDetail-banner .wrapper-banner {
+    min-height: 600px;
+    height: 90vh;
+  }
+}
+#serviceDetail-banner .wrapper-banner .wrapper-main-banner {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#serviceDetail-banner .wrapper-banner .wrapper-main-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#serviceDetail-banner .wrapper-banner .wrapper-sub-banner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+}
+@media (min-width: 992px) {
+  #serviceDetail-banner .wrapper-banner .wrapper-sub-banner {
+    width: 50%;
+    height: 50%;
+  }
+}
+#serviceDetail-banner .wrapper-banner .wrapper-sub-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#serviceDetail-section-2 .wrapper-description {
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  #serviceDetail-section-2 .wrapper-description {
+    max-width: 90%;
+    padding-bottom: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-2 .wrapper-description {
+    padding-bottom: 50px;
+    max-width: 70%;
+  }
+}
+#serviceDetail-section-2 .serviceDetail-section-title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #fdc066;
+}
+#serviceDetail-section-2 .serviceDetail-section-title h1 span {
+  display: block;
+  color: #f57e20;
+}
+#serviceDetail-section-2 .serviceDetail-section-title .line {
+  height: 2px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c8c8c8;
+}
+#serviceDetail-section-2 .serviceDetail-section-title .serviceDetail-description {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-2 .serviceDetail-section-title .serviceDetail-description {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+#serviceDetail-section-2 .wrapper-items {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  #serviceDetail-section-2 .wrapper-items {
+    margin-top: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-2 .wrapper-items {
+    margin-top: 50px;
+  }
+}
+#serviceDetail-section-2 .wrapper-items .contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#serviceDetail-section-2 .wrapper-items .contact-item .item-icon {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  background-color: #eb3424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-2 .wrapper-items .contact-item .item-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+#serviceDetail-section-2 .wrapper-items .contact-item .item-icon .icon i {
+  font-size: 40px;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-2 .wrapper-items .contact-item .item-icon .icon i {
+    font-size: 50px;
+  }
+}
+#serviceDetail-section-2 .wrapper-items .contact-item .line {
+  height: 3px;
+  width: 150px;
+  background-color: #eb3424;
+}
+#serviceDetail-section-2 .wrapper-items .contact-item .item-name {
+  margin-bottom: 10px;
+}
+#serviceDetail-section-2 .wrapper-items .contact-item .item-name span {
+  color: #6b6c6c;
+}
+#serviceDetail-section-2 .wrapper-items .contact-item .item-description {
+  text-align: center;
+}
+
+#serviceDetail-section-3 .wrapper-video-animation {
+  overflow: hidden;
+}
+#serviceDetail-section-3 .wrapper-video-animation video {
+  width: 100%;
+  height: 100%;
+}
+#serviceDetail-section-3 .serviceDetail-section3-title {
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  #serviceDetail-section-3 .serviceDetail-section3-title {
+    padding-top: 50px;
+  }
+}
+#serviceDetail-section-3 .serviceDetail-section3-title h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #fdc066;
+}
+#serviceDetail-section-3 .serviceDetail-section3-title h1 span {
+  display: block;
+  color: #f57e20;
+}
+#serviceDetail-section-3 .serviceDetail-section3-title .line {
+  height: 2px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #c8c8c8;
+}
+#serviceDetail-section-3 .serviceDetail-section3-title .serviceDetail-description {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-3 .serviceDetail-section3-title .serviceDetail-description {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+#serviceDetail-section-3 .serviceDetail-section3-box {
+  margin: 10px 0;
+  padding: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fdc066;
+}
+#serviceDetail-section-3 .serviceDetail-section3-box span {
+  display: block;
+  color: #f57e20;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 18px;
+}
+@media (min-width: 992px) {
+  #serviceDetail-section-3 .serviceDetail-section3-box span {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+}
+#serviceDetail-section-3 .serviceDetail-section3-box .description {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
