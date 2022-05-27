@@ -1,4 +1,5 @@
 #serviceDetail-section-3 {
+  padding-bottom: 25px;
   .wrapper-video-animation {
     overflow: hidden;
     video {
@@ -7,6 +8,7 @@
     }
   }
   .serviceDetail-section3-title {
+    overflow: hidden;
     margin-top: 25px;
     @include tablet {
       padding-top: 50px;
@@ -29,6 +31,7 @@
       background: $color-gray-300;
     }
     .serviceDetail-description {
+      overflow: hidden;
       @include desktop {
         max-width: 70%;
         margin: 0 auto;

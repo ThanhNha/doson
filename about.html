@@ -22,7 +22,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
-                <a class="navbar-brand magnetic" href="index.html">
+                <a class="navbar-brand magnetic" id="logo_menu" href="index.html">
                     <img src="./assets/image/log.png" alt="" class="img-fluid">
                 </a>
 
@@ -40,23 +40,22 @@
                 <div class="collapse navbar-collapse" id="navbarmain">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item magnetic  ">
-                            <a class="nav-link hover-menu" href="index.html">Trang chủ</a>
+                            <a class="nav-link" href="index.html">Trang chủ</a>
                         </li>
                         <li class="nav-item magnetic active"><a class="nav-link hover-menu" href="about.html">Giới
                                 thiệu</a>
                         </li>
-                        <li class="nav-item magnetic"><a class="nav-link hover-menu" href="service.html">Dịch Vụ</a>
+                        <li class="nav-item dropdown"><a class="nav-link hover-menu" href="" data-toggle="dropdown">Dịch
+                                Vụ</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="service.html">Tổng quan</a></li>
+                                <li><a class="dropdown-item" href="serviceDetail.html">Digital Marketing</a></li>
+                            </ul>
                         </li>
 
-                        <li class="nav-item magnetic dropdown">
-                            <a class="nav-link hover-menu dropdown-toggle" href="news.html" id="dropdown05"
-                                data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Tin
-                                tức </i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                <li><a class="dropdown-item hover-menu" href="news.html">Blog with Sidebar</a></li>
+                        <li class="nav-item magnetic">
+                            <a class="nav-link hover-menu dropdown-toggle" href="news.html" id="dropdown05">Tin tức</a>
 
-                                <li><a class="dropdown-item hover-menu" href="news.html">Blog Single</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item magnetic"><a class="nav-link hover-menu" href="recruit.html">Tuyển dụng</a>
                         </li>
@@ -85,6 +84,10 @@
                 <div class="container">
                     <div class="wrapper-aboutAnimation">
                         <div class="wrapper-aboutAnimation-center">
+                            <div class="animation-center">
+                                <strong>CÁCH MẠNG CÔNG NGHIỆP</strong>
+                                <img src="./assets/image/about/DOSON_gioithieuani6.gif" alt="">
+                            </div>
                             <div class="info-text">
                                 <div>
                                     <p>
@@ -99,10 +102,7 @@
                                     <strong>CÁCH MẠNG CÔNG NGHIỆP</strong>
                                 </div>
                             </div>
-                            <div class="animation-center">
-                                <strong>CÁCH MẠNG CÔNG NGHIỆP</strong>
-                                <img src="./assets/image/about/DOSON_gioithieuani6.gif" alt="">
-                            </div>
+
                         </div>
                         <div class="wrapper-aboutAnimation-left">
                             <img src="./assets/image/about/DOSON_gioithieu6c.png" alt="">
@@ -188,7 +188,7 @@
                     <img src="./assets/image/about/SEC4_img1.png" alt="">
                 </div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row reverse">
                         <div class="col-lg-6 col-12 position-relative">
                             <div class="wrapper-card-futures">
                                 <div class="card-futures">

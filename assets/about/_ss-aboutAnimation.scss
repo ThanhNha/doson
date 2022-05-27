@@ -29,12 +29,14 @@
         text-align: center;
         z-index: 1;
         margin: 0 auto;
+        padding-top: 25px;
         @include desktop {
           position: absolute;
           top: 50%;
           left: calc(50% - 50px);
           transform: translate(-50%, -50%);
           max-width: 320px;
+          padding-top: 0;
         }
         strong {
           display: none;

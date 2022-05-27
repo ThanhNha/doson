@@ -142,6 +142,10 @@ $(".wrapper-cards-flow.mobile").slick({
 });
 
 function header() {
+  var dropdown = document.querySelector(".dropdown .nav-link ");
+  if (window.innerWidth < 991) {
+    dropdown.dataset.toggle = "dropdown";
+  }
   var header = gsap.to("#header", { y: "-=300", duration: 0.1, ease: "power2.in", paused: true });
   //fixed header
   ScrollTrigger.create({

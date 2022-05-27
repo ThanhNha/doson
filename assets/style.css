@@ -9026,7 +9026,7 @@ html {
   }
 
   .h3 {
-    font-size: 36px !important;
+    font-size: 24px !important;
     line-height: 120% !important;
   }
 
@@ -9117,7 +9117,6 @@ main {
   display: flex;
 }
 .wrapper-title-service .section-title span {
-  margin-left: 20px;
   display: inline-block;
   color: #fff;
   padding: 10px 15px;
@@ -9126,6 +9125,7 @@ main {
 }
 @media (min-width: 768px) {
   .wrapper-title-service .section-title span {
+    margin-left: 20px;
     margin-top: 0;
   }
 }
@@ -11115,6 +11115,7 @@ section#main-banner .wrapper-title-banner {
 }
 #section-vision .wrapper-vision {
   max-width: 100%;
+  overflow: hidden;
 }
 @media (min-width: 992px) {
   #section-vision .wrapper-vision {
@@ -11211,6 +11212,14 @@ section#main-banner .wrapper-title-banner {
     padding-bottom: 100px;
   }
 }
+#section-futures .row.reverse {
+  flex-direction: column-reverse;
+}
+@media (min-width: 992px) {
+  #section-futures .row.reverse {
+    flex-direction: row;
+  }
+}
 #section-futures .img-animation {
   position: absolute;
   top: auto;
@@ -11275,13 +11284,16 @@ section#main-banner .wrapper-title-banner {
   }
 }
 #section-futures .card-futures {
-  padding: 15px;
+  padding: 15px 25px;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
   max-width: 480px;
   margin: 0 auto;
   overflow: hidden;
+}
+#section-futures .wrapper-title-banner .section-title {
+  margin: 0;
 }
 #section-futures .wrapper-title-banner .section-title h1 {
   color: #f57e20;
@@ -11343,6 +11355,7 @@ section#main-banner .wrapper-title-banner {
   text-align: center;
   z-index: 1;
   margin: 0 auto;
+  padding-top: 25px;
 }
 @media (min-width: 992px) {
   #section-aboutAnimation .wrapper-aboutAnimation-center .info-text {
@@ -11351,6 +11364,7 @@ section#main-banner .wrapper-title-banner {
     left: calc(50% - 50px);
     transform: translate(-50%, -50%);
     max-width: 320px;
+    padding-top: 0;
   }
 }
 #section-aboutAnimation .wrapper-aboutAnimation-center .info-text strong {
@@ -11601,6 +11615,9 @@ section#main-banner .wrapper-title-banner {
 }
 #section-mkt .wrapper-main-service .service .wrapper-btn {
   margin-top: 20px;
+}
+#section-mkt .wrapper-main-service .service .wrapper-btn .btn {
+  padding: 0;
 }
 #section-mkt .wrapper-main-service .service .wrapper-btn .main-btn {
   background: #eb3424;
@@ -12839,6 +12856,7 @@ section#main-banner .wrapper-title-banner {
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   #serviceDetail-section-2 .wrapper-description {
@@ -12851,6 +12869,9 @@ section#main-banner .wrapper-title-banner {
     padding-bottom: 50px;
     max-width: 70%;
   }
+}
+#serviceDetail-section-2 .serviceDetail-section-title {
+  overflow: hidden;
 }
 #serviceDetail-section-2 .serviceDetail-section-title h1 {
   text-transform: uppercase;
@@ -12870,6 +12891,7 @@ section#main-banner .wrapper-title-banner {
   background: #c8c8c8;
 }
 #serviceDetail-section-2 .serviceDetail-section-title .serviceDetail-description {
+  overflow: hidden;
   text-align: center;
 }
 @media (min-width: 992px) {
@@ -12936,6 +12958,9 @@ section#main-banner .wrapper-title-banner {
   text-align: center;
 }
 
+#serviceDetail-section-3 {
+  padding-bottom: 25px;
+}
 #serviceDetail-section-3 .wrapper-video-animation {
   overflow: hidden;
 }
@@ -12944,6 +12969,7 @@ section#main-banner .wrapper-title-banner {
   height: 100%;
 }
 #serviceDetail-section-3 .serviceDetail-section3-title {
+  overflow: hidden;
   margin-top: 25px;
 }
 @media (min-width: 768px) {
@@ -12969,6 +12995,7 @@ section#main-banner .wrapper-title-banner {
   background: #c8c8c8;
 }
 #serviceDetail-section-3 .serviceDetail-section3-title .serviceDetail-description {
+  overflow: hidden;
   text-align: center;
 }
 @media (min-width: 992px) {

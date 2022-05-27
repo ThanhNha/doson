@@ -23,7 +23,7 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
-                <a class="navbar-brand magnetic" href="index.html">
+                <a class="navbar-brand magnetic" id="logo_menu" href="index.html">
                     <img src="./assets/image/log.png" alt="" class="img-fluid">
                 </a>
 
@@ -41,29 +41,27 @@
                 <div class="collapse navbar-collapse" id="navbarmain">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item magnetic  ">
-                            <a class="nav-link hover-menu" href="index.html">Trang chủ</a>
+                            <a class="nav-link" href="index.html">Trang chủ</a>
                         </li>
-                        <li class="nav-item magnetic "><a class="nav-link hover-menu" href="about.html">Giới
+                        <li class="nav-item magnetic active"><a class="nav-link hover-menu" href="about.html">Giới
                                 thiệu</a>
                         </li>
-                        <li class="nav-item magnetic active"><a class="nav-link hover-menu" href="service.html">Dịch
+                        <li class="nav-item dropdown"><a class="nav-link hover-menu" href="" data-toggle="dropdown">Dịch
                                 Vụ</a>
-                        </li>
-
-                        <li class="nav-item magnetic dropdown">
-                            <a class="nav-link hover-menu dropdown-toggle" href="news.html" id="dropdown05"
-                                data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Tin
-                                tức </i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                <li><a class="dropdown-item hover-menu" href="news.html">Blog with Sidebar</a></li>
-
-                                <li><a class="dropdown-item hover-menu" href="news.html">Blog Single</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="service.html">Tổng quan</a></li>
+                                <li><a class="dropdown-item" href="serviceDetail.html">Digital Marketing</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item magnetic"><a class="nav-link hover-menu" href="recruit.html">Tuyển dụng</a>
+
+                        <li class="nav-item magnetic">
+                            <a class="nav-link hover-menu dropdown-toggle" href="news.html" id="dropdown05">Tin tức</a>
+
                         </li>
-                        <li class="nav-item magnetic "><a class="nav-link hover-menu" href="contact.html">Liên
-                                hệ</a>
+                        <li class="nav-item magnetic"><a class="nav-link hover-menu" href="recruit.html">Tuyển
+                                dụng</a>
+                        </li>
+                        <li class="nav-item magnetic"><a class="nav-link hover-menu" href="contact.html">Liên hệ</a>
                         </li>
                     </ul>
                 </div>
